@@ -1,0 +1,501 @@
+Order_ID,Order_Date,Region,State,Category,Sub_Category,Product_Name,Sales,Quantity,Discount,Profit
+ORD-2024-1001,16-10-2024,North,Delhi,Clothing,Trousers,Trousers Plus,2850.25,3,0.05,695.8
+ORD-2023-1002,23-11-2024,Central,Madhya Pradesh,Office Supplies,Paper,Paper Standard,1957.76,1,0,302.79
+ORD-2024-1003,01-06-2024,Central,Madhya Pradesh,Furniture,Furnishings,Furnishings Plus,4932.91,8,0.15,628.04
+ORD-2023-1004,07-01-2023,South,Telangana,Clothing,Dresses,Dresses Plus,3301.16,1,0.05,988.05
+ORD-2024-1005,11-12-2023,North,Delhi,Office Supplies,Paper,Paper Pro,1583.39,2,0.1,270.65
+ORD-2023-1006,14-02-2023,West,Maharashtra,Office Supplies,Paper,Paper Premium,1580.91,1,0.1,359.42
+ORD-2024-1007,25-09-2024,East,Odisha,Electronics,Phones,Phones Plus,1064.88,2,0.1,283.58
+ORD-2023-1008,27-08-2023,North,Haryana,Clothing,Footwear,Footwear Pro,2570.76,4,0.05,392.16
+ORD-2024-1009,03-08-2023,East,West Bengal,Furniture,Tables,Tables Plus,2222.77,1,0.15,166.41
+ORD-2023-1010,17-10-2024,Central,Madhya Pradesh,Clothing,Shirts,Shirts Plus,760.88,1,0,229.22
+ORD-2024-1011,15-02-2024,East,West Bengal,Furniture,Bookcases,Bookcases Plus,1440.94,2,0.25,35.75
+ORD-2023-1012,20-10-2024,West,Gujarat,Clothing,Trousers,Trousers Plus,1774.51,2,0.25,71.59
+ORD-2024-1013,27-09-2023,Central,Chhattisgarh,Office Supplies,Appliances,Appliances Plus,3398.42,2,0.05,636.8
+ORD-2023-1014,04-04-2023,North,Delhi,Furniture,Tables,Tables Ultra,902.87,1,0.2,-39.83
+ORD-2024-1015,26-01-2024,Central,Chhattisgarh,Clothing,Shirts,Shirts Standard,3250.79,1,0.25,393.99
+ORD-2023-1016,01-10-2023,East,West Bengal,Clothing,Footwear,Footwear Plus,2365.13,2,0.15,-45.38
+ORD-2024-1017,27-09-2023,Central,Madhya Pradesh,Electronics,Accessories,Accessories Premium,726.1,2,0.2,-7.46
+ORD-2023-1018,18-01-2024,South,Karnataka,Clothing,Footwear,Footwear Standard,1324.35,2,0,440.05
+ORD-2024-1019,11-11-2023,South,Karnataka,Furniture,Chairs,Chairs Standard,2585.34,10,0.25,55.58
+ORD-2023-1020,12-03-2023,Central,Madhya Pradesh,Furniture,Furnishings,Furnishings Premium,1668.77,1,0.05,210.71
+ORD-2024-1021,13-09-2024,West,Gujarat,Furniture,Bookcases,Bookcases Ultra,3783.57,1,0.25,236.36
+ORD-2023-1022,24-03-2024,Central,Chhattisgarh,Electronics,Laptops,Laptops Plus,3595.88,1,0,663.52
+ORD-2024-1023,25-08-2024,Central,Madhya Pradesh,Furniture,Chairs,Chairs Standard,2596.02,1,0.25,149.99
+ORD-2023-1024,23-08-2023,North,Delhi,Clothing,Shirts,Shirts Premium,3678.41,2,0.05,476.79
+ORD-2024-1025,12-05-2024,South,Tamil Nadu,Office Supplies,Binders,Binders Ultra,3380.6,2,0.15,93.31
+ORD-2023-1026,10-04-2023,West,Goa,Office Supplies,Art,Art Ultra,4440.88,4,0.25,-383.95
+ORD-2024-1027,31-10-2024,North,Delhi,Office Supplies,Appliances,Appliances Standard,2641.14,2,0.05,284.97
+ORD-2023-1028,03-07-2024,West,Gujarat,Office Supplies,Binders,Binders Pro,4839.45,2,0.15,205.44
+ORD-2024-1029,19-03-2023,West,Maharashtra,Electronics,Phones,Phones Standard,2249.08,2,0.05,228.46
+ORD-2023-1030,12-05-2024,West,Gujarat,Office Supplies,Paper,Paper Plus,1766.07,1,0.15,-34.37
+ORD-2024-1031,04-02-2024,East,Assam,Clothing,Footwear,Footwear Premium,4705.06,1,0.25,374.53
+ORD-2023-1032,08-06-2023,South,Kerala,Furniture,Chairs,Chairs Premium,1525.37,1,0.25,54.23
+ORD-2024-1033,18-11-2023,North,Delhi,Office Supplies,Binders,Binders Standard,3566.58,1,0.2,-142.56
+ORD-2023-1034,10-07-2023,North,Delhi,Furniture,Furnishings,Furnishings Standard,2592.28,2,0.2,4.03
+ORD-2024-1035,31-08-2024,North,Delhi,Office Supplies,Appliances,Appliances Pro,1341.33,2,0.05,305.06
+ORD-2023-1036,18-11-2023,South,Kerala,Office Supplies,Binders,Binders Pro,1733.27,5,0.15,102.34
+ORD-2024-1037,16-03-2023,North,Haryana,Electronics,Phones,Phones Premium,2140.02,1,0.05,399.05
+ORD-2023-1038,16-05-2023,East,West Bengal,Furniture,Bookcases,Bookcases Pro,1841.31,2,0.05,312.19
+ORD-2024-1039,10-07-2024,East,West Bengal,Clothing,Shirts,Shirts Plus,1929.49,4,0.1,94.27
+ORD-2023-1040,20-04-2023,Central,Madhya Pradesh,Clothing,Dresses,Dresses Premium,2705.92,10,0.05,647.81
+ORD-2024-1041,28-07-2023,East,Assam,Clothing,Shirts,Shirts Standard,480.27,1,0.25,2.83
+ORD-2023-1042,11-10-2023,North,Delhi,Clothing,Trousers,Trousers Pro,2098.88,2,0.05,514.87
+ORD-2024-1043,18-07-2024,West,Maharashtra,Electronics,Phones,Phones Plus,1891.77,2,0.2,-96.47
+ORD-2023-1044,14-01-2024,Central,Madhya Pradesh,Office Supplies,Binders,Binders Standard,2552.02,1,0.1,283.69
+ORD-2024-1045,10-02-2023,East,Odisha,Furniture,Chairs,Chairs Pro,4001.67,4,0.2,644.4
+ORD-2023-1046,21-02-2024,Central,Madhya Pradesh,Furniture,Tables,Tables Plus,3274.14,3,0.15,-45.19
+ORD-2024-1047,07-12-2023,West,Gujarat,Clothing,Trousers,Trousers Standard,2995.51,5,0.15,593.24
+ORD-2023-1048,26-04-2024,South,Tamil Nadu,Office Supplies,Appliances,Appliances Pro,6465.12,1,0.05,748.21
+ORD-2024-1049,06-11-2024,South,Telangana,Clothing,Dresses,Dresses Standard,2266.18,1,0.1,244.26
+ORD-2023-1050,05-06-2024,West,Goa,Electronics,Phones,Phones Pro,1540.88,1,0.05,316.11
+ORD-2024-1051,29-09-2023,North,Delhi,Office Supplies,Appliances,Appliances Pro,1024.72,2,0.15,134.8
+ORD-2023-1052,07-06-2024,North,Haryana,Furniture,Bookcases,Bookcases Standard,2813.77,1,0.25,25.36
+ORD-2024-1053,16-06-2024,Central,Madhya Pradesh,Clothing,Footwear,Footwear Standard,1264.97,5,0.25,164.69
+ORD-2023-1054,30-09-2024,East,West Bengal,Clothing,Dresses,Dresses Ultra,1739.65,3,0.1,209.8
+ORD-2024-1055,30-10-2023,Central,Madhya Pradesh,Furniture,Furnishings,Furnishings Ultra,2444.5,1,0.25,212.75
+ORD-2023-1056,28-06-2023,Central,Chhattisgarh,Office Supplies,Paper,Paper Pro,4337.13,6,0.1,314.64
+ORD-2024-1057,16-08-2024,Central,Chhattisgarh,Office Supplies,Art,Art Ultra,2491.17,2,0.25,-116.03
+ORD-2023-1058,29-04-2024,South,Karnataka,Clothing,Dresses,Dresses Standard,3326.37,6,0.05,759.07
+ORD-2024-1059,19-08-2023,South,Tamil Nadu,Electronics,Phones,Phones Plus,2477.59,1,0.15,329.07
+ORD-2023-1060,16-03-2023,West,Rajasthan,Furniture,Furnishings,Furnishings Ultra,2618.69,6,0.15,107.36
+ORD-2024-1061,02-11-2024,North,Delhi,Office Supplies,Binders,Binders Plus,2539.56,1,0.25,74.89
+ORD-2023-1062,21-02-2023,Central,Madhya Pradesh,Electronics,Printers,Printers Plus,1329.57,3,0.15,195.31
+ORD-2024-1063,26-07-2024,Central,Chhattisgarh,Office Supplies,Art,Art Premium,924.8,1,0.15,188.94
+ORD-2023-1064,01-05-2024,West,Goa,Furniture,Bookcases,Bookcases Premium,3111.14,4,0.15,425.25
+ORD-2024-1065,09-10-2023,West,Maharashtra,Clothing,Trousers,Trousers Pro,3655.6,3,0.1,365.29
+ORD-2023-1066,07-07-2024,North,Punjab,Furniture,Tables,Tables Ultra,2719.3,2,0.25,-168.05
+ORD-2024-1067,08-08-2023,North,Haryana,Office Supplies,Appliances,Appliances Premium,1169.5,2,0.15,98.17
+ORD-2023-1068,31-07-2023,West,Rajasthan,Electronics,Printers,Printers Ultra,1235.19,3,0,414.64
+ORD-2024-1069,02-11-2023,West,Rajasthan,Furniture,Furnishings,Furnishings Plus,2150.36,2,0.1,277.31
+ORD-2023-1070,30-01-2023,West,Goa,Office Supplies,Binders,Binders Ultra,4651.35,4,0.05,1419.5
+ORD-2024-1071,30-06-2024,North,Haryana,Electronics,Phones,Phones Ultra,1017.86,8,0.05,281.65
+ORD-2023-1072,06-07-2023,North,Uttar Pradesh,Office Supplies,Appliances,Appliances Plus,2827.75,2,0.15,174.5
+ORD-2024-1073,24-01-2024,East,Assam,Clothing,Shirts,Shirts Ultra,2813.21,5,0,808.11
+ORD-2023-1074,23-02-2023,East,Odisha,Electronics,Phones,Phones Standard,2039.6,2,0.05,224.03
+ORD-2024-1075,21-01-2023,Central,Madhya Pradesh,Furniture,Tables,Tables Ultra,1601.56,3,0.25,-114.36
+ORD-2023-1076,12-08-2023,West,Goa,Clothing,Trousers,Trousers Premium,3459.1,3,0.2,625.87
+ORD-2024-1077,28-04-2023,South,Kerala,Electronics,Phones,Phones Pro,1174.46,10,0.2,128.41
+ORD-2023-1078,20-01-2024,West,Gujarat,Electronics,Laptops,Laptops Standard,2340.53,2,0.25,217.95
+ORD-2024-1079,01-12-2024,Central,Madhya Pradesh,Electronics,Accessories,Accessories Premium,2635.71,4,0.15,383.18
+ORD-2023-1080,12-03-2023,Central,Chhattisgarh,Electronics,Printers,Printers Ultra,2953,1,0,615.35
+ORD-2024-1081,06-01-2024,West,Gujarat,Office Supplies,Binders,Binders Premium,2879.39,6,0.25,-93.52
+ORD-2023-1082,05-07-2024,West,Rajasthan,Office Supplies,Appliances,Appliances Pro,2877.39,2,0.05,770.23
+ORD-2024-1083,30-03-2023,East,Assam,Furniture,Furnishings,Furnishings Premium,2969.43,4,0.2,317.87
+ORD-2023-1084,11-12-2023,North,Haryana,Clothing,Trousers,Trousers Ultra,3987.27,2,0.05,592.93
+ORD-2024-1085,22-09-2023,East,Bihar,Clothing,Shirts,Shirts Premium,1274.61,1,0.05,103.76
+ORD-2023-1086,21-02-2024,West,Gujarat,Office Supplies,Art,Art Ultra,1838.67,2,0,226.64
+ORD-2024-1087,15-08-2023,West,Gujarat,Clothing,Dresses,Dresses Ultra,3161.31,1,0.2,229.92
+ORD-2023-1088,11-03-2024,Central,Chhattisgarh,Clothing,Footwear,Footwear Pro,643.95,2,0.1,53.35
+ORD-2024-1089,04-05-2023,South,Kerala,Electronics,Laptops,Laptops Plus,2218.42,1,0.05,542.74
+ORD-2023-1090,11-10-2023,Central,Chhattisgarh,Electronics,Laptops,Laptops Pro,1012.4,1,0.05,152.08
+ORD-2024-1091,06-11-2023,North,Punjab,Clothing,Shirts,Shirts Standard,2193.42,3,0.2,28.59
+ORD-2023-1092,10-05-2023,West,Maharashtra,Electronics,Accessories,Accessories Ultra,1390.29,10,0.15,125.29
+ORD-2024-1093,08-07-2023,North,Uttar Pradesh,Office Supplies,Paper,Paper Standard,430.65,1,0.15,44.33
+ORD-2023-1094,13-08-2024,North,Punjab,Furniture,Bookcases,Bookcases Standard,2386.3,1,0.05,213.84
+ORD-2024-1095,02-03-2024,Central,Madhya Pradesh,Office Supplies,Art,Art Ultra,2863.39,1,0.1,673.02
+ORD-2023-1096,15-03-2024,East,West Bengal,Electronics,Laptops,Laptops Plus,3476,1,0.1,643.43
+ORD-2024-1097,10-06-2023,South,Tamil Nadu,Electronics,Laptops,Laptops Standard,5370.71,1,0.15,497.47
+ORD-2023-1098,31-08-2024,West,Goa,Electronics,Laptops,Laptops Pro,2707.34,4,0.25,-79.38
+ORD-2024-1099,09-04-2024,North,Punjab,Clothing,Trousers,Trousers Ultra,6280.06,1,0,1482.98
+ORD-2023-1100,25-10-2024,South,Kerala,Furniture,Chairs,Chairs Standard,3786.37,4,0.05,977.48
+ORD-2024-1101,01-09-2024,Central,Chhattisgarh,Office Supplies,Paper,Paper Ultra,2767.25,1,0.25,-66.35
+ORD-2023-1102,17-02-2024,East,Assam,Office Supplies,Paper,Paper Premium,3313.76,2,0,1068.21
+ORD-2024-1103,27-11-2023,Central,Chhattisgarh,Electronics,Phones,Phones Plus,1820.1,3,0.25,198.37
+ORD-2023-1104,12-08-2024,Central,Madhya Pradesh,Clothing,Shirts,Shirts Plus,883.18,1,0.15,96.92
+ORD-2024-1105,28-03-2024,East,Odisha,Office Supplies,Art,Art Standard,4624.47,5,0.15,309.79
+ORD-2023-1106,08-12-2023,East,West Bengal,Furniture,Bookcases,Bookcases Ultra,753.6,1,0.25,17.99
+ORD-2024-1107,09-11-2024,West,Maharashtra,Office Supplies,Paper,Paper Pro,2404.09,3,0.1,242.38
+ORD-2023-1108,18-02-2024,Central,Madhya Pradesh,Office Supplies,Art,Art Standard,1441.36,3,0.05,273.3
+ORD-2024-1109,29-09-2024,West,Rajasthan,Electronics,Laptops,Laptops Pro,4948.47,2,0.2,-134.83
+ORD-2023-1110,22-10-2023,West,Rajasthan,Electronics,Phones,Phones Premium,890.43,2,0.05,211.43
+ORD-2024-1111,15-11-2023,Central,Madhya Pradesh,Office Supplies,Paper,Paper Plus,2521.88,2,0,543.12
+ORD-2023-1112,01-05-2023,South,Telangana,Clothing,Dresses,Dresses Ultra,1418.86,1,0.15,319.33
+ORD-2024-1113,07-09-2023,West,Gujarat,Office Supplies,Binders,Binders Premium,1452.3,3,0.2,183.82
+ORD-2023-1114,20-05-2023,North,Uttar Pradesh,Office Supplies,Appliances,Appliances Premium,3446.86,5,0.1,776.02
+ORD-2024-1115,17-10-2023,East,Assam,Furniture,Furnishings,Furnishings Premium,3381.2,1,0.15,224.11
+ORD-2023-1116,19-07-2024,Central,Chhattisgarh,Office Supplies,Appliances,Appliances Plus,3066.12,5,0.25,-123.56
+ORD-2024-1117,28-01-2024,South,Telangana,Electronics,Accessories,Accessories Ultra,2106.14,4,0.25,270.34
+ORD-2023-1118,26-01-2024,West,Gujarat,Office Supplies,Paper,Paper Plus,2290.31,8,0.2,415.32
+ORD-2024-1119,06-12-2023,North,Haryana,Electronics,Printers,Printers Standard,1861.4,4,0.25,-119.06
+ORD-2023-1120,01-11-2024,South,Karnataka,Office Supplies,Appliances,Appliances Pro,3914.79,6,0.2,443.06
+ORD-2024-1121,27-10-2024,North,Uttar Pradesh,Office Supplies,Appliances,Appliances Ultra,4333.65,6,0.2,-221.13
+ORD-2023-1122,12-03-2023,South,Kerala,Furniture,Chairs,Chairs Ultra,2160.89,1,0,626.86
+ORD-2024-1123,21-12-2024,North,Haryana,Furniture,Bookcases,Bookcases Standard,2585.46,3,0,468.21
+ORD-2023-1124,27-02-2023,East,Bihar,Clothing,Footwear,Footwear Plus,1967.79,2,0.05,379.37
+ORD-2024-1125,02-08-2024,South,Tamil Nadu,Furniture,Chairs,Chairs Premium,1070.49,4,0.15,144.44
+ORD-2023-1126,04-09-2023,West,Gujarat,Furniture,Furnishings,Furnishings Pro,907.78,4,0.15,39.79
+ORD-2024-1127,10-01-2023,West,Goa,Furniture,Chairs,Chairs Ultra,2117.37,2,0.1,565.15
+ORD-2023-1128,03-11-2023,West,Goa,Office Supplies,Appliances,Appliances Plus,1162.74,6,0.15,224.8
+ORD-2024-1129,20-04-2023,South,Telangana,Clothing,Dresses,Dresses Pro,1226.42,4,0,422.48
+ORD-2023-1130,05-11-2024,West,Goa,Electronics,Phones,Phones Premium,1740.42,1,0.25,42.09
+ORD-2024-1131,21-10-2023,South,Kerala,Furniture,Tables,Tables Premium,2469.63,5,0.1,467.85
+ORD-2023-1132,06-11-2024,South,Karnataka,Electronics,Accessories,Accessories Ultra,1537.23,1,0,376.46
+ORD-2024-1133,15-05-2023,North,Uttar Pradesh,Clothing,Footwear,Footwear Plus,745.65,8,0.05,69.38
+ORD-2023-1134,06-07-2024,East,Bihar,Furniture,Bookcases,Bookcases Ultra,1377.93,4,0.1,284.74
+ORD-2024-1135,13-12-2023,North,Haryana,Electronics,Laptops,Laptops Plus,4449.14,2,0.25,360.62
+ORD-2023-1136,11-02-2024,Central,Chhattisgarh,Electronics,Printers,Printers Standard,1762.25,1,0.1,271.64
+ORD-2024-1137,10-04-2024,East,Bihar,Office Supplies,Appliances,Appliances Standard,2127.38,1,0.25,-88.38
+ORD-2023-1138,26-01-2023,Central,Chhattisgarh,Furniture,Chairs,Chairs Ultra,4262.09,8,0.25,-104.22
+ORD-2024-1139,23-02-2024,North,Punjab,Electronics,Phones,Phones Pro,3307.16,1,0.15,29.86
+ORD-2023-1140,29-08-2023,Central,Madhya Pradesh,Office Supplies,Art,Art Pro,1715.65,1,0.25,235.64
+ORD-2024-1141,14-12-2024,Central,Chhattisgarh,Furniture,Furnishings,Furnishings Standard,2788.84,1,0.15,373.46
+ORD-2023-1142,14-10-2023,North,Uttar Pradesh,Furniture,Furnishings,Furnishings Ultra,2225.63,1,0.05,609.52
+ORD-2024-1143,12-04-2023,East,Bihar,Electronics,Printers,Printers Pro,3693.38,8,0.05,1115.59
+ORD-2023-1144,10-04-2024,North,Punjab,Electronics,Phones,Phones Pro,6701.32,2,0.05,2058.68
+ORD-2024-1145,01-08-2024,South,Karnataka,Furniture,Tables,Tables Plus,2709.25,3,0.1,578.67
+ORD-2023-1146,02-09-2024,North,Uttar Pradesh,Furniture,Tables,Tables Premium,1991.67,1,0.1,437.43
+ORD-2024-1147,23-04-2023,North,Punjab,Electronics,Accessories,Accessories Plus,3679.84,2,0.2,77.07
+ORD-2023-1148,28-06-2023,East,West Bengal,Furniture,Furnishings,Furnishings Premium,3786.63,10,0,1084.55
+ORD-2024-1149,02-05-2024,West,Goa,Electronics,Printers,Printers Premium,2611.67,5,0.05,773.98
+ORD-2023-1150,14-02-2023,Central,Chhattisgarh,Office Supplies,Paper,Paper Standard,5642.85,1,0.15,1082.44
+ORD-2024-1151,12-03-2024,North,Haryana,Office Supplies,Paper,Paper Standard,831.64,5,0.1,143.1
+ORD-2023-1152,09-03-2023,South,Kerala,Clothing,Footwear,Footwear Premium,5531.87,1,0.2,75.92
+ORD-2024-1153,01-06-2024,Central,Chhattisgarh,Electronics,Phones,Phones Premium,4074.87,1,0.25,474.21
+ORD-2023-1154,16-03-2024,West,Gujarat,Office Supplies,Appliances,Appliances Ultra,1577.23,2,0.15,132.48
+ORD-2024-1155,08-04-2023,East,Assam,Clothing,Dresses,Dresses Pro,1987.17,1,0.05,460.44
+ORD-2023-1156,30-04-2024,North,Delhi,Electronics,Phones,Phones Ultra,4193.41,5,0,1199.93
+ORD-2024-1157,17-01-2024,South,Karnataka,Clothing,Shirts,Shirts Ultra,2140.19,8,0.1,510.23
+ORD-2023-1158,09-03-2024,North,Uttar Pradesh,Clothing,Dresses,Dresses Standard,2195.3,1,0.2,146.76
+ORD-2024-1159,08-06-2023,West,Gujarat,Electronics,Accessories,Accessories Premium,1020.47,3,0.1,49.72
+ORD-2023-1160,13-10-2023,Central,Madhya Pradesh,Office Supplies,Paper,Paper Premium,1952.68,3,0.25,209.65
+ORD-2024-1161,01-10-2023,North,Punjab,Clothing,Dresses,Dresses Pro,691.27,3,0.1,14.88
+ORD-2023-1162,27-05-2023,Central,Chhattisgarh,Electronics,Laptops,Laptops Standard,4275.65,4,0,1225.09
+ORD-2024-1163,09-08-2023,West,Rajasthan,Office Supplies,Appliances,Appliances Plus,4074.58,3,0.1,398.94
+ORD-2023-1164,29-11-2023,Central,Madhya Pradesh,Electronics,Laptops,Laptops Plus,2222.76,2,0.2,-105.71
+ORD-2024-1165,25-03-2023,East,Assam,Office Supplies,Art,Art Premium,3092.4,1,0.15,258.36
+ORD-2023-1166,09-08-2023,Central,Madhya Pradesh,Clothing,Footwear,Footwear Standard,4467.33,1,0.1,846.8
+ORD-2024-1167,30-08-2024,West,Goa,Electronics,Laptops,Laptops Ultra,3836.3,2,0.2,-177.64
+ORD-2023-1168,29-07-2023,East,Odisha,Furniture,Bookcases,Bookcases Pro,561.86,2,0.1,28.09
+ORD-2024-1169,24-05-2024,West,Gujarat,Furniture,Furnishings,Furnishings Premium,4759.42,3,0.25,-202.14
+ORD-2023-1170,26-07-2024,East,West Bengal,Office Supplies,Paper,Paper Ultra,2231.6,8,0,479.66
+ORD-2024-1171,21-03-2023,East,Assam,Office Supplies,Art,Art Pro,592.1,10,0,119.16
+ORD-2023-1172,29-11-2023,South,Telangana,Clothing,Shirts,Shirts Ultra,2061.59,2,0,331.56
+ORD-2024-1173,26-08-2024,West,Maharashtra,Office Supplies,Appliances,Appliances Pro,842.68,1,0.05,120.73
+ORD-2023-1174,22-06-2023,North,Delhi,Furniture,Bookcases,Bookcases Pro,3133.23,1,0.25,437.26
+ORD-2024-1175,22-10-2024,South,Tamil Nadu,Electronics,Laptops,Laptops Pro,2648.99,2,0.05,273.84
+ORD-2023-1176,06-06-2023,North,Punjab,Office Supplies,Art,Art Premium,1125.98,2,0.2,58.81
+ORD-2024-1177,01-08-2024,Central,Chhattisgarh,Clothing,Trousers,Trousers Ultra,1087.32,1,0,236.2
+ORD-2023-1178,08-10-2024,East,Bihar,Electronics,Accessories,Accessories Premium,2861.89,1,0,508.28
+ORD-2024-1179,07-04-2024,North,Delhi,Clothing,Dresses,Dresses Standard,1996.54,2,0.25,231.72
+ORD-2023-1180,03-04-2023,Central,Chhattisgarh,Office Supplies,Paper,Paper Ultra,1046.56,3,0.2,107.75
+ORD-2024-1181,26-11-2023,Central,Chhattisgarh,Furniture,Chairs,Chairs Ultra,1343.56,6,0,406.75
+ORD-2023-1182,18-12-2023,North,Punjab,Electronics,Laptops,Laptops Ultra,2425.26,1,0.15,269.25
+ORD-2024-1183,16-09-2024,South,Kerala,Clothing,Dresses,Dresses Ultra,3040.47,1,0.15,527.87
+ORD-2023-1184,26-11-2024,Central,Madhya Pradesh,Clothing,Shirts,Shirts Pro,3283.84,2,0,786.45
+ORD-2024-1185,31-01-2024,East,Bihar,Furniture,Bookcases,Bookcases Standard,702.99,4,0.2,74.45
+ORD-2023-1186,25-12-2023,East,Assam,Furniture,Chairs,Chairs Pro,4463.57,1,0.2,152.52
+ORD-2024-1187,03-12-2023,South,Karnataka,Office Supplies,Appliances,Appliances Standard,2978.67,2,0.1,289.58
+ORD-2023-1188,08-08-2023,East,Assam,Furniture,Tables,Tables Plus,2566.33,2,0.05,203.49
+ORD-2024-1189,14-04-2023,Central,Madhya Pradesh,Clothing,Trousers,Trousers Premium,647.64,2,0.15,12.02
+ORD-2023-1190,05-07-2023,Central,Madhya Pradesh,Office Supplies,Paper,Paper Ultra,2410.33,2,0.1,455.77
+ORD-2024-1191,01-09-2023,West,Goa,Office Supplies,Binders,Binders Premium,1395.23,6,0.05,191.66
+ORD-2023-1192,25-04-2024,South,Kerala,Office Supplies,Art,Art Pro,1009.38,3,0.15,106.72
+ORD-2024-1193,04-03-2024,South,Tamil Nadu,Furniture,Bookcases,Bookcases Standard,2122.93,2,0.25,42.77
+ORD-2023-1194,16-01-2024,Central,Madhya Pradesh,Electronics,Accessories,Accessories Standard,4709.6,4,0.05,603.76
+ORD-2024-1195,09-06-2024,South,Telangana,Electronics,Laptops,Laptops Ultra,1044.93,2,0.1,263.97
+ORD-2023-1196,29-02-2024,North,Haryana,Clothing,Trousers,Trousers Ultra,1894.21,3,0,366.96
+ORD-2024-1197,29-01-2023,East,West Bengal,Clothing,Trousers,Trousers Plus,778.21,1,0,133.63
+ORD-2023-1198,28-04-2024,South,Telangana,Office Supplies,Paper,Paper Standard,2956.55,1,0,484.82
+ORD-2024-1199,03-06-2023,Central,Chhattisgarh,Electronics,Accessories,Accessories Plus,1449.24,6,0.1,73.13
+ORD-2023-1200,02-09-2023,West,Rajasthan,Electronics,Phones,Phones Ultra,1191.98,2,0.2,88.22
+ORD-2024-1201,09-10-2024,Central,Madhya Pradesh,Furniture,Bookcases,Bookcases Ultra,2506.52,2,0,635.91
+ORD-2023-1202,04-09-2023,Central,Chhattisgarh,Furniture,Chairs,Chairs Premium,2068.37,5,0.1,76.36
+ORD-2024-1203,22-06-2024,Central,Madhya Pradesh,Office Supplies,Art,Art Standard,1465.07,3,0.25,-4.8
+ORD-2023-1204,18-01-2024,East,West Bengal,Clothing,Shirts,Shirts Pro,3280.16,3,0.05,797.85
+ORD-2024-1205,05-10-2024,North,Uttar Pradesh,Furniture,Chairs,Chairs Pro,611.19,1,0.2,15.06
+ORD-2023-1206,20-10-2024,South,Telangana,Office Supplies,Binders,Binders Plus,2924.82,2,0,816.06
+ORD-2024-1207,13-04-2024,North,Uttar Pradesh,Furniture,Chairs,Chairs Plus,635.27,3,0,113.65
+ORD-2023-1208,14-11-2023,Central,Chhattisgarh,Office Supplies,Appliances,Appliances Standard,2196.77,3,0.25,-114.72
+ORD-2024-1209,01-01-2024,North,Uttar Pradesh,Clothing,Shirts,Shirts Pro,2048.17,1,0.15,414.49
+ORD-2023-1210,26-03-2024,West,Goa,Furniture,Furnishings,Furnishings Ultra,910.13,1,0.1,228.51
+ORD-2024-1211,15-06-2024,East,West Bengal,Office Supplies,Paper,Paper Ultra,3736.47,3,0.2,705.35
+ORD-2023-1212,04-07-2023,Central,Chhattisgarh,Clothing,Shirts,Shirts Standard,1464.95,3,0.1,271.35
+ORD-2024-1213,10-11-2023,West,Rajasthan,Furniture,Furnishings,Furnishings Pro,259.5,6,0.15,-2.44
+ORD-2023-1214,28-12-2023,Central,Chhattisgarh,Clothing,Shirts,Shirts Standard,1252.44,8,0.25,74.37
+ORD-2024-1215,08-01-2024,Central,Madhya Pradesh,Electronics,Laptops,Laptops Premium,2655.86,1,0.25,253.18
+ORD-2023-1216,05-02-2023,South,Karnataka,Furniture,Bookcases,Bookcases Pro,1437.57,4,0.15,312.48
+ORD-2024-1217,03-02-2023,Central,Madhya Pradesh,Office Supplies,Appliances,Appliances Pro,4051.47,4,0.15,691.87
+ORD-2023-1218,10-08-2024,South,Kerala,Office Supplies,Appliances,Appliances Pro,2483.27,1,0.05,745.3
+ORD-2024-1219,27-01-2023,South,Telangana,Office Supplies,Paper,Paper Pro,2691.25,2,0.1,527.51
+ORD-2023-1220,08-08-2023,Central,Chhattisgarh,Office Supplies,Binders,Binders Standard,1629.27,5,0.05,445.13
+ORD-2024-1221,07-04-2024,South,Telangana,Electronics,Accessories,Accessories Pro,4118.82,2,0.25,-345.01
+ORD-2023-1222,09-07-2024,East,Bihar,Furniture,Tables,Tables Pro,1643.4,2,0.2,-6.47
+ORD-2024-1223,25-07-2023,South,Tamil Nadu,Office Supplies,Paper,Paper Pro,2157.49,6,0.2,179.22
+ORD-2023-1224,23-04-2024,Central,Madhya Pradesh,Electronics,Phones,Phones Pro,5158.36,2,0.15,1185.9
+ORD-2024-1225,05-05-2024,Central,Chhattisgarh,Office Supplies,Paper,Paper Plus,2456.18,8,0.1,443.55
+ORD-2023-1226,05-04-2024,West,Goa,Furniture,Tables,Tables Plus,3307.16,2,0.15,349.62
+ORD-2024-1227,26-02-2023,North,Punjab,Clothing,Trousers,Trousers Plus,2606.8,2,0.1,661.3
+ORD-2023-1228,19-08-2023,East,Bihar,Electronics,Accessories,Accessories Plus,1635.49,4,0.25,227.48
+ORD-2024-1229,09-10-2023,South,Kerala,Electronics,Laptops,Laptops Premium,1587.74,4,0.2,-34.06
+ORD-2023-1230,05-11-2024,Central,Chhattisgarh,Electronics,Phones,Phones Standard,1204.56,3,0,406.1
+ORD-2024-1231,13-08-2024,East,Odisha,Office Supplies,Paper,Paper Ultra,2822.24,5,0.25,102.71
+ORD-2023-1232,19-10-2024,East,Assam,Furniture,Furnishings,Furnishings Pro,2599.59,5,0.15,-4.57
+ORD-2024-1233,03-03-2023,South,Telangana,Office Supplies,Art,Art Ultra,1799.84,1,0.05,261.06
+ORD-2023-1234,28-05-2023,East,Bihar,Clothing,Footwear,Footwear Plus,1093.13,4,0.1,162.6
+ORD-2024-1235,19-04-2023,East,Odisha,Office Supplies,Paper,Paper Pro,3482.97,2,0.15,146.21
+ORD-2023-1236,10-04-2023,North,Uttar Pradesh,Office Supplies,Art,Art Plus,4439.6,2,0.05,1169.26
+ORD-2024-1237,14-08-2024,East,Odisha,Furniture,Furnishings,Furnishings Premium,551.21,8,0.15,57.71
+ORD-2023-1238,12-11-2023,West,Maharashtra,Electronics,Printers,Printers Premium,4745.35,3,0.15,1051.91
+ORD-2024-1239,09-08-2023,Central,Chhattisgarh,Electronics,Phones,Phones Pro,7189.02,5,0.15,930.11
+ORD-2023-1240,31-10-2024,West,Goa,Electronics,Phones,Phones Ultra,2306.64,3,0.05,647.28
+ORD-2024-1241,10-01-2024,West,Goa,Electronics,Printers,Printers Standard,2825.44,1,0.2,227.32
+ORD-2023-1242,07-01-2024,Central,Chhattisgarh,Electronics,Printers,Printers Premium,2439.38,3,0.15,417.38
+ORD-2024-1243,14-10-2023,Central,Madhya Pradesh,Furniture,Chairs,Chairs Ultra,4964.9,6,0.1,1085.94
+ORD-2023-1244,14-12-2023,Central,Chhattisgarh,Furniture,Tables,Tables Premium,1532.75,1,0.2,61.84
+ORD-2024-1245,11-02-2023,North,Delhi,Furniture,Bookcases,Bookcases Ultra,2206.96,2,0.2,119.72
+ORD-2023-1246,12-09-2024,Central,Madhya Pradesh,Clothing,Dresses,Dresses Plus,3905.82,2,0.15,889.18
+ORD-2024-1247,03-11-2023,Central,Chhattisgarh,Office Supplies,Appliances,Appliances Ultra,1065.48,6,0,204.67
+ORD-2023-1248,20-11-2024,North,Haryana,Clothing,Shirts,Shirts Premium,619.49,2,0.15,28.73
+ORD-2024-1249,02-11-2024,Central,Madhya Pradesh,Electronics,Printers,Printers Plus,1724.05,2,0.2,167.67
+ORD-2023-1250,26-09-2024,West,Gujarat,Furniture,Chairs,Chairs Premium,5140.93,1,0.25,-372.85
+ORD-2024-1251,20-01-2023,West,Goa,Office Supplies,Binders,Binders Ultra,2063.19,3,0.25,-101.15
+ORD-2023-1252,28-05-2024,Central,Chhattisgarh,Electronics,Laptops,Laptops Premium,1061.3,1,0.05,212.5
+ORD-2024-1253,09-11-2024,West,Rajasthan,Clothing,Trousers,Trousers Ultra,2882,1,0.2,73.73
+ORD-2023-1254,29-12-2023,East,Assam,Furniture,Tables,Tables Pro,2134.25,1,0.2,31.21
+ORD-2024-1255,01-11-2023,East,Odisha,Office Supplies,Appliances,Appliances Ultra,2346.83,1,0.1,375.78
+ORD-2023-1256,08-10-2023,East,West Bengal,Office Supplies,Art,Art Pro,1986.79,1,0.05,263.47
+ORD-2024-1257,22-10-2023,North,Uttar Pradesh,Office Supplies,Appliances,Appliances Ultra,2342.35,3,0.05,258.87
+ORD-2023-1258,05-07-2024,East,Bihar,Furniture,Chairs,Chairs Premium,4510.13,2,0.25,210.66
+ORD-2024-1259,06-09-2023,North,Punjab,Furniture,Chairs,Chairs Standard,203.83,1,0.15,12.75
+ORD-2023-1260,28-04-2024,North,Punjab,Electronics,Laptops,Laptops Ultra,2534.83,2,0.25,339.05
+ORD-2024-1261,02-05-2024,West,Gujarat,Clothing,Dresses,Dresses Pro,1817.45,3,0.25,-154.86
+ORD-2023-1262,02-04-2023,Central,Madhya Pradesh,Electronics,Laptops,Laptops Ultra,1694.63,4,0.05,497.34
+ORD-2024-1263,07-02-2023,West,Rajasthan,Furniture,Bookcases,Bookcases Standard,2043.71,1,0,356.83
+ORD-2023-1264,09-09-2024,North,Uttar Pradesh,Clothing,Footwear,Footwear Premium,1339.01,1,0.2,85
+ORD-2024-1265,18-05-2023,Central,Chhattisgarh,Clothing,Trousers,Trousers Standard,1316.31,4,0.1,79.8
+ORD-2023-1266,14-04-2024,East,Odisha,Electronics,Accessories,Accessories Pro,2856.22,1,0.2,310.19
+ORD-2024-1267,17-07-2023,South,Telangana,Office Supplies,Appliances,Appliances Standard,1031.99,4,0.15,152.03
+ORD-2023-1268,09-07-2023,South,Telangana,Clothing,Trousers,Trousers Standard,2454.8,3,0.1,284.5
+ORD-2024-1269,02-04-2024,East,Bihar,Clothing,Shirts,Shirts Pro,2480.86,1,0.25,-25.09
+ORD-2023-1270,30-08-2023,North,Delhi,Office Supplies,Appliances,Appliances Plus,610.98,5,0.15,92.57
+ORD-2024-1271,21-12-2024,East,West Bengal,Clothing,Dresses,Dresses Premium,5368.85,1,0.05,616.25
+ORD-2023-1272,17-05-2023,West,Gujarat,Office Supplies,Appliances,Appliances Ultra,4355.24,3,0.25,162.49
+ORD-2024-1273,27-04-2024,Central,Madhya Pradesh,Furniture,Chairs,Chairs Premium,564.89,3,0.15,63.29
+ORD-2023-1274,06-01-2024,North,Delhi,Electronics,Laptops,Laptops Premium,564.7,4,0.2,-12.73
+ORD-2024-1275,02-12-2023,Central,Chhattisgarh,Electronics,Laptops,Laptops Premium,1497.7,5,0.15,4.1
+ORD-2023-1276,06-06-2024,West,Maharashtra,Office Supplies,Binders,Binders Premium,3671.42,2,0.15,345.85
+ORD-2024-1277,01-03-2023,Central,Chhattisgarh,Clothing,Shirts,Shirts Ultra,2093.14,1,0.1,469.1
+ORD-2023-1278,12-08-2023,Central,Madhya Pradesh,Electronics,Printers,Printers Pro,6369.26,1,0.25,-535.4
+ORD-2024-1279,03-03-2023,North,Haryana,Electronics,Accessories,Accessories Ultra,3137.59,10,0.05,791.44
+ORD-2023-1280,18-10-2024,West,Goa,Office Supplies,Art,Art Ultra,854,1,0.15,0.05
+ORD-2024-1281,08-11-2024,Central,Madhya Pradesh,Clothing,Shirts,Shirts Plus,2267.77,1,0.2,86.78
+ORD-2023-1282,11-05-2023,South,Karnataka,Electronics,Accessories,Accessories Ultra,634.08,3,0.25,50.58
+ORD-2024-1283,10-03-2024,Central,Chhattisgarh,Furniture,Tables,Tables Ultra,2938.55,1,0.1,172.73
+ORD-2023-1284,13-07-2023,North,Delhi,Office Supplies,Paper,Paper Plus,5027.91,1,0.05,386.26
+ORD-2024-1285,31-08-2024,North,Haryana,Electronics,Laptops,Laptops Standard,4913.02,2,0.15,440.9
+ORD-2023-1286,06-07-2024,South,Karnataka,Furniture,Bookcases,Bookcases Plus,2674.75,1,0.25,117.76
+ORD-2024-1287,14-08-2024,Central,Chhattisgarh,Furniture,Bookcases,Bookcases Plus,293.58,1,0.25,8.9
+ORD-2023-1288,28-02-2024,East,Bihar,Electronics,Laptops,Laptops Ultra,754.58,1,0.2,48.22
+ORD-2024-1289,19-12-2023,West,Goa,Office Supplies,Art,Art Plus,2985.96,4,0.1,340.74
+ORD-2023-1290,04-07-2024,West,Gujarat,Furniture,Bookcases,Bookcases Plus,2974.44,3,0.15,620.72
+ORD-2024-1291,29-07-2024,West,Rajasthan,Furniture,Furnishings,Furnishings Plus,564.64,4,0.1,40
+ORD-2023-1292,24-10-2024,North,Haryana,Clothing,Shirts,Shirts Premium,3029.56,2,0.25,325.23
+ORD-2024-1293,22-02-2023,East,Assam,Electronics,Phones,Phones Plus,700.51,2,0.2,84.82
+ORD-2023-1294,26-07-2024,South,Telangana,Furniture,Bookcases,Bookcases Pro,1705.54,4,0,260.87
+ORD-2024-1295,14-07-2023,North,Haryana,Furniture,Tables,Tables Ultra,2466.1,3,0.05,488.34
+ORD-2023-1296,17-10-2023,West,Rajasthan,Clothing,Dresses,Dresses Pro,676.68,4,0.1,100.29
+ORD-2024-1297,24-05-2024,West,Maharashtra,Office Supplies,Appliances,Appliances Plus,1651.86,1,0.1,162.26
+ORD-2023-1298,16-02-2023,Central,Madhya Pradesh,Furniture,Chairs,Chairs Pro,559.65,6,0.2,97.21
+ORD-2024-1299,16-08-2024,West,Goa,Furniture,Tables,Tables Pro,4004.28,8,0.05,620.5
+ORD-2023-1300,09-09-2023,West,Goa,Clothing,Footwear,Footwear Ultra,832.26,5,0.15,18.36
+ORD-2024-1301,27-12-2023,South,Tamil Nadu,Office Supplies,Binders,Binders Premium,1851.21,5,0.25,257.89
+ORD-2023-1302,20-06-2024,North,Delhi,Electronics,Phones,Phones Ultra,4293.52,1,0.05,1161.98
+ORD-2024-1303,25-08-2023,North,Punjab,Electronics,Laptops,Laptops Premium,3843.62,1,0.15,281.74
+ORD-2023-1304,24-09-2024,Central,Chhattisgarh,Office Supplies,Paper,Paper Standard,3391.19,3,0.2,264.21
+ORD-2024-1305,13-01-2023,North,Uttar Pradesh,Clothing,Shirts,Shirts Premium,2313.01,6,0.25,158.46
+ORD-2023-1306,03-07-2023,North,Delhi,Furniture,Tables,Tables Plus,3974.41,2,0.2,284.62
+ORD-2024-1307,29-12-2023,East,Assam,Electronics,Accessories,Accessories Ultra,2029.99,1,0.15,246.14
+ORD-2023-1308,14-12-2024,South,Kerala,Electronics,Phones,Phones Standard,773.83,1,0.15,57.89
+ORD-2024-1309,19-07-2024,West,Maharashtra,Electronics,Laptops,Laptops Standard,2857.11,2,0.15,546.66
+ORD-2023-1310,22-10-2024,East,West Bengal,Electronics,Laptops,Laptops Plus,1810.18,2,0.25,220.64
+ORD-2024-1311,01-05-2024,East,West Bengal,Electronics,Accessories,Accessories Premium,2314.58,2,0.2,241.94
+ORD-2023-1312,03-07-2023,East,West Bengal,Furniture,Tables,Tables Ultra,3479.64,1,0,608.31
+ORD-2024-1313,31-07-2024,South,Telangana,Clothing,Footwear,Footwear Plus,2524.86,5,0.25,204.62
+ORD-2023-1314,27-05-2024,East,West Bengal,Electronics,Printers,Printers Plus,3207.62,10,0,593.89
+ORD-2024-1315,20-09-2024,Central,Chhattisgarh,Clothing,Shirts,Shirts Pro,2195.35,4,0.15,225.35
+ORD-2023-1316,31-12-2023,Central,Chhattisgarh,Office Supplies,Binders,Binders Premium,1534.17,5,0.25,-7.64
+ORD-2024-1317,25-09-2024,East,Odisha,Electronics,Phones,Phones Pro,1602.65,4,0.05,248.41
+ORD-2023-1318,11-10-2024,South,Telangana,Clothing,Dresses,Dresses Standard,4651.02,1,0,471.14
+ORD-2024-1319,12-11-2023,West,Goa,Clothing,Shirts,Shirts Plus,814.87,1,0,119.66
+ORD-2023-1320,04-04-2024,Central,Chhattisgarh,Electronics,Phones,Phones Standard,1144.19,1,0.1,181.42
+ORD-2024-1321,03-09-2024,Central,Chhattisgarh,Office Supplies,Paper,Paper Pro,2088.34,3,0.15,160.7
+ORD-2023-1322,28-03-2023,Central,Madhya Pradesh,Furniture,Furnishings,Furnishings Plus,2454.17,8,0.05,312.24
+ORD-2024-1323,02-10-2023,West,Gujarat,Electronics,Laptops,Laptops Ultra,3694.92,2,0.1,462.88
+ORD-2023-1324,10-05-2024,North,Uttar Pradesh,Clothing,Trousers,Trousers Ultra,1865.81,1,0.2,175.7
+ORD-2024-1325,13-04-2024,North,Punjab,Clothing,Shirts,Shirts Ultra,2358.26,2,0.1,543.35
+ORD-2023-1326,25-01-2024,East,Assam,Clothing,Footwear,Footwear Premium,2843.5,1,0.05,384.18
+ORD-2024-1327,09-09-2024,South,Telangana,Clothing,Trousers,Trousers Ultra,1418.42,2,0.1,131.72
+ORD-2023-1328,12-12-2024,West,Gujarat,Clothing,Footwear,Footwear Pro,1486.83,8,0.15,105.94
+ORD-2024-1329,31-07-2024,South,Tamil Nadu,Electronics,Printers,Printers Plus,4579.17,1,0.15,821.6
+ORD-2023-1330,10-12-2024,North,Haryana,Office Supplies,Binders,Binders Pro,1471.21,1,0.05,181.21
+ORD-2024-1331,07-06-2023,West,Rajasthan,Electronics,Printers,Printers Premium,2409.56,3,0.15,302.55
+ORD-2023-1332,01-07-2024,Central,Chhattisgarh,Electronics,Accessories,Accessories Premium,702.65,5,0.2,69.95
+ORD-2024-1333,29-03-2023,North,Punjab,Clothing,Trousers,Trousers Premium,1428.75,8,0,344.05
+ORD-2023-1334,22-10-2024,West,Goa,Office Supplies,Paper,Paper Standard,1665.87,5,0,274.34
+ORD-2024-1335,06-06-2024,Central,Madhya Pradesh,Office Supplies,Appliances,Appliances Ultra,3114.48,2,0.15,539.07
+ORD-2023-1336,25-08-2024,Central,Madhya Pradesh,Clothing,Shirts,Shirts Ultra,5984.42,1,0,1040.44
+ORD-2024-1337,29-03-2023,North,Punjab,Clothing,Dresses,Dresses Pro,2090.35,1,0.15,368.04
+ORD-2023-1338,17-06-2024,West,Goa,Office Supplies,Paper,Paper Ultra,5441.38,1,0.25,403.7
+ORD-2024-1339,23-11-2023,North,Uttar Pradesh,Electronics,Phones,Phones Standard,2111.95,3,0.1,384.36
+ORD-2023-1340,24-11-2024,South,Tamil Nadu,Furniture,Tables,Tables Pro,4092.9,2,0.2,190.7
+ORD-2024-1341,18-04-2024,South,Telangana,Furniture,Tables,Tables Ultra,3153.9,5,0.15,-40.06
+ORD-2023-1342,20-09-2024,South,Telangana,Office Supplies,Art,Art Standard,5569.55,3,0.25,-257.88
+ORD-2024-1343,13-10-2023,North,Delhi,Furniture,Bookcases,Bookcases Pro,3394.75,3,0.05,592
+ORD-2023-1344,26-09-2023,West,Goa,Office Supplies,Art,Art Premium,2867.02,4,0,536.08
+ORD-2024-1345,13-04-2024,Central,Madhya Pradesh,Clothing,Shirts,Shirts Plus,1922.37,4,0.1,95.09
+ORD-2023-1346,09-11-2023,North,Punjab,Clothing,Trousers,Trousers Premium,2330.8,5,0.15,197.09
+ORD-2024-1347,22-05-2023,Central,Chhattisgarh,Office Supplies,Binders,Binders Ultra,2171.11,1,0.25,74.57
+ORD-2023-1348,22-10-2024,South,Tamil Nadu,Office Supplies,Appliances,Appliances Plus,4277.26,10,0.05,593.02
+ORD-2024-1349,06-04-2024,Central,Madhya Pradesh,Clothing,Shirts,Shirts Ultra,804.32,2,0.05,87.5
+ORD-2023-1350,29-01-2024,Central,Chhattisgarh,Office Supplies,Art,Art Ultra,3264.28,1,0.25,358.98
+ORD-2024-1351,15-05-2024,South,Karnataka,Electronics,Laptops,Laptops Pro,2475.99,2,0,417.73
+ORD-2023-1352,04-07-2024,East,Odisha,Office Supplies,Art,Art Premium,4928.89,8,0.2,-156.23
+ORD-2024-1353,27-04-2023,East,Bihar,Electronics,Printers,Printers Premium,1601.65,4,0.05,492.42
+ORD-2023-1354,15-04-2023,South,Kerala,Electronics,Printers,Printers Pro,2397.07,3,0.1,564.63
+ORD-2024-1355,31-03-2023,West,Maharashtra,Furniture,Tables,Tables Premium,4106.34,5,0.25,-50.68
+ORD-2023-1356,16-09-2024,West,Gujarat,Furniture,Tables,Tables Plus,698.02,8,0,169.28
+ORD-2024-1357,29-06-2024,East,Odisha,Clothing,Dresses,Dresses Pro,1483.3,1,0.2,10.14
+ORD-2023-1358,10-06-2024,North,Punjab,Office Supplies,Paper,Paper Pro,2665.04,2,0.25,-181.96
+ORD-2024-1359,16-05-2023,South,Tamil Nadu,Clothing,Trousers,Trousers Ultra,4901.71,2,0.15,76.19
+ORD-2023-1360,09-10-2024,East,Assam,Office Supplies,Art,Art Standard,2048.59,10,0.25,202.09
+ORD-2024-1361,06-04-2023,West,Goa,Clothing,Footwear,Footwear Ultra,745.7,4,0.1,123.41
+ORD-2023-1362,06-04-2023,West,Goa,Electronics,Printers,Printers Plus,357.2,1,0.15,66.51
+ORD-2024-1363,21-05-2024,East,Bihar,Clothing,Dresses,Dresses Premium,2467.95,1,0.2,-67.5
+ORD-2023-1364,11-05-2024,East,West Bengal,Electronics,Phones,Phones Ultra,1478.02,1,0,193.71
+ORD-2024-1365,11-06-2023,West,Rajasthan,Electronics,Printers,Printers Plus,3100.48,3,0.25,394.85
+ORD-2023-1366,27-10-2024,East,Odisha,Clothing,Shirts,Shirts Pro,2006.38,1,0.1,81.47
+ORD-2024-1367,11-11-2024,South,Karnataka,Office Supplies,Appliances,Appliances Plus,2074.33,1,0.15,298.44
+ORD-2023-1368,21-12-2024,North,Delhi,Furniture,Furnishings,Furnishings Standard,2467.28,1,0.05,514.23
+ORD-2024-1369,15-06-2024,West,Maharashtra,Electronics,Accessories,Accessories Standard,880.45,2,0.15,135.16
+ORD-2023-1370,04-05-2024,North,Punjab,Office Supplies,Paper,Paper Standard,4629.92,1,0,825.69
+ORD-2024-1371,03-11-2023,South,Telangana,Furniture,Tables,Tables Standard,2613.12,5,0.2,211.2
+ORD-2023-1372,16-09-2024,South,Telangana,Clothing,Trousers,Trousers Plus,2787.4,3,0.15,373.56
+ORD-2024-1373,29-03-2024,South,Karnataka,Electronics,Laptops,Laptops Standard,2400.5,2,0.2,294.07
+ORD-2023-1374,26-12-2023,West,Goa,Furniture,Tables,Tables Pro,3200.09,1,0.25,-252.61
+ORD-2024-1375,20-07-2024,Central,Chhattisgarh,Electronics,Accessories,Accessories Plus,1366.09,2,0.2,125.31
+ORD-2023-1376,13-07-2023,West,Goa,Electronics,Laptops,Laptops Ultra,5456.96,3,0.15,44.67
+ORD-2024-1377,26-05-2024,Central,Madhya Pradesh,Electronics,Accessories,Accessories Pro,3430.77,2,0.05,537.63
+ORD-2023-1378,05-08-2024,West,Goa,Furniture,Furnishings,Furnishings Standard,1389.28,1,0,342.93
+ORD-2024-1379,15-01-2023,East,Odisha,Electronics,Phones,Phones Ultra,1595.32,1,0.2,18.54
+ORD-2023-1380,28-05-2024,West,Rajasthan,Office Supplies,Paper,Paper Premium,275.12,5,0.2,25.86
+ORD-2024-1381,12-10-2023,North,Uttar Pradesh,Electronics,Laptops,Laptops Plus,1103.02,10,0.2,23.92
+ORD-2023-1382,23-08-2024,North,Uttar Pradesh,Office Supplies,Binders,Binders Standard,2071.61,2,0.05,168.95
+ORD-2024-1383,20-03-2024,North,Haryana,Electronics,Accessories,Accessories Plus,4761.74,1,0,491.25
+ORD-2023-1384,21-05-2023,North,Punjab,Office Supplies,Appliances,Appliances Premium,3497.04,2,0.2,474.71
+ORD-2024-1385,23-09-2023,South,Kerala,Furniture,Bookcases,Bookcases Standard,1826.44,1,0,335.61
+ORD-2023-1386,15-03-2024,East,West Bengal,Clothing,Shirts,Shirts Ultra,1360.66,1,0.15,146.54
+ORD-2024-1387,26-02-2023,West,Gujarat,Clothing,Trousers,Trousers Pro,5449.01,1,0,1763.12
+ORD-2023-1388,21-11-2024,North,Punjab,Electronics,Phones,Phones Standard,3084.82,1,0.05,220.55
+ORD-2024-1389,08-01-2024,West,Gujarat,Furniture,Chairs,Chairs Premium,4533.35,8,0.25,386.09
+ORD-2023-1390,05-03-2024,South,Kerala,Furniture,Furnishings,Furnishings Pro,3583.6,2,0.1,811.68
+ORD-2024-1391,08-08-2024,East,West Bengal,Electronics,Laptops,Laptops Plus,3181.67,5,0.2,589.73
+ORD-2023-1392,15-02-2024,North,Haryana,Clothing,Dresses,Dresses Pro,2689.77,5,0,640.9
+ORD-2024-1393,09-01-2023,East,Odisha,Clothing,Dresses,Dresses Premium,4358.66,3,0.05,767.04
+ORD-2023-1394,28-08-2024,West,Gujarat,Furniture,Tables,Tables Standard,2402.03,4,0.15,-33.68
+ORD-2024-1395,08-07-2024,East,West Bengal,Clothing,Shirts,Shirts Ultra,1390.47,1,0.25,113.75
+ORD-2023-1396,17-04-2023,South,Tamil Nadu,Office Supplies,Art,Art Standard,1561.57,2,0.05,371.52
+ORD-2024-1397,06-04-2023,North,Punjab,Office Supplies,Appliances,Appliances Ultra,2891.85,2,0.25,-227.8
+ORD-2023-1398,08-04-2023,Central,Madhya Pradesh,Office Supplies,Paper,Paper Premium,1468.2,4,0.2,-65.23
+ORD-2024-1399,09-11-2024,South,Tamil Nadu,Clothing,Dresses,Dresses Pro,2183.37,3,0.15,338.82
+ORD-2023-1400,01-12-2023,East,Assam,Clothing,Trousers,Trousers Standard,2294.01,1,0.05,215.7
+ORD-2024-1401,21-08-2024,North,Punjab,Electronics,Laptops,Laptops Ultra,1814.45,4,0.15,106.16
+ORD-2023-1402,04-05-2023,Central,Chhattisgarh,Furniture,Furnishings,Furnishings Pro,611.66,2,0.15,28.29
+ORD-2024-1403,03-05-2023,North,Punjab,Clothing,Shirts,Shirts Plus,899.25,1,0.1,51.33
+ORD-2023-1404,12-09-2023,East,Assam,Electronics,Accessories,Accessories Pro,735.14,3,0.05,49.82
+ORD-2024-1405,19-02-2024,West,Gujarat,Electronics,Printers,Printers Standard,5176.01,5,0.05,467.72
+ORD-2023-1406,05-03-2023,South,Tamil Nadu,Furniture,Furnishings,Furnishings Pro,1588.25,2,0.25,91.44
+ORD-2024-1407,22-10-2024,North,Uttar Pradesh,Electronics,Phones,Phones Standard,3104.03,1,0.05,886.59
+ORD-2023-1408,30-03-2024,South,Karnataka,Clothing,Shirts,Shirts Standard,665.54,3,0.15,-4.89
+ORD-2024-1409,10-08-2024,West,Rajasthan,Office Supplies,Paper,Paper Ultra,1416.01,6,0.25,9.44
+ORD-2023-1410,29-12-2023,South,Tamil Nadu,Clothing,Dresses,Dresses Ultra,2693.31,1,0.05,184.93
+ORD-2024-1411,26-09-2024,Central,Madhya Pradesh,Clothing,Footwear,Footwear Ultra,2100.12,5,0.2,125.5
+ORD-2023-1412,31-03-2023,East,Assam,Furniture,Furnishings,Furnishings Plus,4061.39,2,0.25,492.09
+ORD-2024-1413,22-06-2024,South,Karnataka,Office Supplies,Appliances,Appliances Ultra,4013.49,2,0.2,543.26
+ORD-2023-1414,19-12-2023,Central,Chhattisgarh,Office Supplies,Appliances,Appliances Plus,3371.32,4,0,605.89
+ORD-2024-1415,13-08-2023,North,Uttar Pradesh,Electronics,Printers,Printers Premium,884.64,8,0.1,187.29
+ORD-2023-1416,27-08-2023,South,Karnataka,Furniture,Tables,Tables Pro,677.93,1,0.2,97.67
+ORD-2024-1417,27-02-2023,South,Telangana,Clothing,Trousers,Trousers Plus,1796.9,2,0.05,373.99
+ORD-2023-1418,15-12-2024,East,West Bengal,Clothing,Trousers,Trousers Premium,1812.26,3,0.05,487.81
+ORD-2024-1419,19-05-2024,Central,Chhattisgarh,Furniture,Furnishings,Furnishings Standard,4184.95,1,0,477.26
+ORD-2023-1420,08-09-2024,South,Karnataka,Office Supplies,Paper,Paper Pro,3442.33,5,0.2,-33.16
+ORD-2024-1421,14-05-2023,East,Odisha,Clothing,Shirts,Shirts Standard,4162.09,3,0.05,860.11
+ORD-2023-1422,26-05-2023,North,Uttar Pradesh,Electronics,Accessories,Accessories Ultra,1761.12,1,0.2,-61.18
+ORD-2024-1423,06-11-2023,East,Odisha,Furniture,Furnishings,Furnishings Ultra,2668.85,2,0.25,-55.19
+ORD-2023-1424,29-07-2024,Central,Chhattisgarh,Furniture,Tables,Tables Ultra,1966.84,2,0.1,400.25
+ORD-2024-1425,29-10-2023,South,Tamil Nadu,Electronics,Printers,Printers Premium,1046.79,1,0,152.33
+ORD-2023-1426,22-11-2023,Central,Madhya Pradesh,Electronics,Printers,Printers Plus,2320.6,2,0.1,478.82
+ORD-2024-1427,01-09-2023,East,Bihar,Furniture,Chairs,Chairs Pro,2780.81,2,0.15,-47.69
+ORD-2023-1428,03-08-2023,South,Karnataka,Clothing,Dresses,Dresses Standard,1185.66,2,0.25,-118.19
+ORD-2024-1429,31-01-2024,West,Rajasthan,Furniture,Furnishings,Furnishings Ultra,2704.9,1,0.15,183.41
+ORD-2023-1430,20-01-2024,North,Haryana,Furniture,Tables,Tables Ultra,2515.42,5,0,754.12
+ORD-2024-1431,04-02-2023,East,West Bengal,Clothing,Dresses,Dresses Standard,1391.16,3,0,257.99
+ORD-2023-1432,20-01-2024,South,Karnataka,Electronics,Accessories,Accessories Premium,2093.24,5,0.2,341.84
+ORD-2024-1433,01-02-2023,West,Gujarat,Office Supplies,Binders,Binders Standard,5966.78,1,0,1090.57
+ORD-2023-1434,14-07-2023,West,Goa,Clothing,Dresses,Dresses Plus,2401.98,1,0,270
+ORD-2024-1435,08-08-2024,Central,Chhattisgarh,Furniture,Chairs,Chairs Pro,2775.66,2,0,574.29
+ORD-2023-1436,29-10-2023,Central,Chhattisgarh,Furniture,Chairs,Chairs Standard,1275.72,10,0.05,131.03
+ORD-2024-1437,26-10-2023,North,Haryana,Electronics,Accessories,Accessories Ultra,2544.78,10,0.15,260.27
+ORD-2023-1438,07-11-2024,East,West Bengal,Office Supplies,Binders,Binders Pro,3734.29,3,0.15,270.18
+ORD-2024-1439,01-04-2024,North,Uttar Pradesh,Office Supplies,Art,Art Pro,1820.32,5,0.05,490.16
+ORD-2023-1440,31-07-2024,North,Punjab,Electronics,Phones,Phones Pro,602.5,5,0.2,26.21
+ORD-2024-1441,26-08-2024,South,Karnataka,Office Supplies,Art,Art Premium,1131.24,4,0.25,132.04
+ORD-2023-1442,01-05-2024,Central,Madhya Pradesh,Office Supplies,Appliances,Appliances Standard,4300.78,2,0.15,884.65
+ORD-2024-1443,05-02-2023,Central,Madhya Pradesh,Electronics,Printers,Printers Plus,1809.74,2,0.05,548.43
+ORD-2023-1444,17-07-2023,South,Karnataka,Office Supplies,Paper,Paper Ultra,861.41,2,0.05,266.45
+ORD-2024-1445,04-10-2024,South,Kerala,Clothing,Shirts,Shirts Standard,625.88,1,0.15,74.54
+ORD-2023-1446,19-07-2024,East,Bihar,Office Supplies,Paper,Paper Premium,850.67,3,0.2,60.09
+ORD-2024-1447,05-03-2024,North,Haryana,Furniture,Tables,Tables Premium,1440.6,3,0.2,123.42
+ORD-2023-1448,13-04-2023,North,Delhi,Clothing,Dresses,Dresses Ultra,337.62,2,0.1,39.08
+ORD-2024-1449,12-05-2024,Central,Chhattisgarh,Electronics,Laptops,Laptops Pro,1359.69,1,0.15,21.7
+ORD-2023-1450,15-09-2024,West,Maharashtra,Office Supplies,Appliances,Appliances Plus,950.9,3,0,272.37
+ORD-2024-1451,03-10-2023,East,West Bengal,Clothing,Dresses,Dresses Pro,692.08,3,0.1,159.67
+ORD-2023-1452,13-12-2024,North,Punjab,Furniture,Bookcases,Bookcases Ultra,3150.65,8,0.1,275.23
+ORD-2024-1453,02-03-2024,Central,Madhya Pradesh,Furniture,Furnishings,Furnishings Plus,2976.89,1,0.15,491.89
+ORD-2023-1454,12-06-2024,East,West Bengal,Furniture,Chairs,Chairs Pro,1819.96,1,0.25,48.59
+ORD-2024-1455,19-05-2023,Central,Madhya Pradesh,Furniture,Tables,Tables Plus,2687.64,2,0,436.4
+ORD-2023-1456,12-04-2024,North,Uttar Pradesh,Furniture,Bookcases,Bookcases Pro,2089.63,1,0.15,222.09
+ORD-2024-1457,12-10-2024,North,Delhi,Furniture,Bookcases,Bookcases Ultra,1117.07,5,0.2,57.56
+ORD-2023-1458,30-04-2024,Central,Chhattisgarh,Clothing,Trousers,Trousers Pro,483.5,4,0.25,52.08
+ORD-2024-1459,03-04-2023,East,West Bengal,Office Supplies,Paper,Paper Plus,2694.89,2,0.2,363.7
+ORD-2023-1460,08-08-2023,South,Tamil Nadu,Furniture,Bookcases,Bookcases Ultra,1962.69,1,0.2,-107.92
+ORD-2024-1461,29-11-2024,North,Haryana,Furniture,Tables,Tables Premium,1932.01,4,0,301.28
+ORD-2023-1462,14-09-2024,East,Bihar,Office Supplies,Art,Art Pro,2349.92,8,0.15,101.05
+ORD-2024-1463,22-04-2024,East,Assam,Electronics,Phones,Phones Premium,1128.25,5,0.25,159.78
+ORD-2023-1464,19-01-2024,Central,Chhattisgarh,Clothing,Shirts,Shirts Ultra,1462.84,8,0,269.27
+ORD-2024-1465,11-10-2023,East,Bihar,Clothing,Dresses,Dresses Plus,2217.62,5,0.05,419.85
+ORD-2023-1466,04-09-2023,North,Haryana,Clothing,Trousers,Trousers Standard,1783.48,3,0.25,43.42
+ORD-2024-1467,30-10-2023,East,Assam,Office Supplies,Art,Art Standard,2701.54,5,0.2,316.13
+ORD-2023-1468,08-08-2024,South,Kerala,Furniture,Furnishings,Furnishings Pro,1793.49,4,0.2,26.99
+ORD-2024-1469,24-06-2023,Central,Madhya Pradesh,Clothing,Shirts,Shirts Ultra,3273.17,5,0.05,802.68
+ORD-2023-1470,26-07-2024,South,Kerala,Electronics,Laptops,Laptops Pro,5502.61,3,0.05,1353.93
+ORD-2024-1471,11-11-2023,West,Goa,Clothing,Dresses,Dresses Premium,1223.99,3,0.1,166.39
+ORD-2023-1472,01-05-2023,West,Maharashtra,Electronics,Printers,Printers Plus,2894.3,1,0.2,-86.96
+ORD-2024-1473,28-11-2024,West,Goa,Office Supplies,Paper,Paper Plus,1310.07,1,0.05,403.62
+ORD-2023-1474,17-12-2023,West,Rajasthan,Furniture,Bookcases,Bookcases Plus,4166.34,1,0,924.49
+ORD-2024-1475,08-10-2024,South,Kerala,Electronics,Phones,Phones Ultra,5034.53,3,0.1,364.23
+ORD-2023-1476,22-06-2023,Central,Madhya Pradesh,Office Supplies,Paper,Paper Plus,2570.96,3,0.2,124.51
+ORD-2024-1477,15-03-2024,West,Rajasthan,Office Supplies,Art,Art Standard,2130.61,2,0,497.38
+ORD-2023-1478,18-01-2024,North,Uttar Pradesh,Furniture,Chairs,Chairs Standard,3679.99,1,0.25,306.91
+ORD-2024-1479,20-08-2023,East,Bihar,Furniture,Chairs,Chairs Ultra,3925.12,4,0.2,342.14
+ORD-2023-1480,21-06-2023,North,Delhi,Clothing,Dresses,Dresses Ultra,637.89,1,0.25,19.18
+ORD-2024-1481,20-06-2024,East,Assam,Furniture,Bookcases,Bookcases Ultra,2957.16,1,0.1,613.7
+ORD-2023-1482,18-06-2023,West,Maharashtra,Furniture,Tables,Tables Plus,994.2,1,0.05,242.11
+ORD-2024-1483,26-08-2024,Central,Madhya Pradesh,Electronics,Accessories,Accessories Standard,1332.49,1,0.15,265.35
+ORD-2023-1484,19-09-2023,Central,Madhya Pradesh,Electronics,Phones,Phones Standard,1419.74,6,0,386.79
+ORD-2024-1485,02-03-2024,West,Rajasthan,Electronics,Accessories,Accessories Ultra,3187.04,2,0.25,-196.7
+ORD-2023-1486,12-12-2024,North,Uttar Pradesh,Office Supplies,Paper,Paper Premium,938.86,10,0.1,164.96
+ORD-2024-1487,18-12-2024,South,Telangana,Electronics,Phones,Phones Pro,893.6,3,0,264.68
+ORD-2023-1488,24-05-2024,South,Tamil Nadu,Clothing,Trousers,Trousers Pro,1810.79,3,0.25,4.42
+ORD-2024-1489,14-06-2023,North,Haryana,Furniture,Furnishings,Furnishings Pro,5277.88,1,0.05,320.29
+ORD-2023-1490,18-11-2024,North,Delhi,Office Supplies,Binders,Binders Standard,1083.18,1,0.2,-44.67
+ORD-2024-1491,14-04-2023,East,Odisha,Office Supplies,Appliances,Appliances Pro,3065.76,4,0.15,-22.93
+ORD-2023-1492,28-06-2023,North,Uttar Pradesh,Clothing,Dresses,Dresses Ultra,4351.55,6,0.25,-309.07
+ORD-2024-1493,16-02-2023,North,Punjab,Furniture,Bookcases,Bookcases Pro,907.52,2,0.15,198.54
+ORD-2023-1494,02-10-2023,North,Uttar Pradesh,Clothing,Trousers,Trousers Standard,2230.12,2,0.15,178.55
+ORD-2024-1495,12-04-2024,East,Assam,Office Supplies,Art,Art Plus,3323.31,1,0,442.43
+ORD-2023-1496,02-03-2023,South,Karnataka,Office Supplies,Art,Art Premium,1515.78,4,0.25,14.46
+ORD-2024-1497,17-09-2024,West,Goa,Electronics,Laptops,Laptops Ultra,2641.57,1,0.15,21.75
+ORD-2023-1498,26-02-2024,West,Maharashtra,Electronics,Accessories,Accessories Pro,1018.1,1,0,281.14
+ORD-2024-1499,25-11-2024,Central,Madhya Pradesh,Clothing,Shirts,Shirts Ultra,1169.3,3,0.25,95.49
+ORD-2023-1500,08-05-2024,East,Assam,Furniture,Chairs,Chairs Standard,1206.12,3,0.25,161.13
