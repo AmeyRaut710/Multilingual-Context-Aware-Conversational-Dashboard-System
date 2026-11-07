@@ -61,6 +61,44 @@ class ValidationService:
         return None
 
     @classmethod
+    def find_all_matching_columns(cls, text: str, available_columns: List[ColumnMeta], preferred_dtype: Optional[str] = None) -> List[ColumnMeta]:
+        """
+        Extracts all columns mentioned in the text (exact, normalized, or domain synonyms).
+        Preserves order of appearance in the text.
+        """
+        text_lower = text.lower()
+        seen = set()
+        matches_with_pos = []
+
+        # 1. Exact or clean column names
+        for col in available_columns:
+            clean_col = col.name.lower().replace("_", " ").strip()
+            pattern = r'\b' + re.escape(clean_col) + r'\b'
+            m = re.search(pattern, text_lower)
+            if m:
+                if preferred_dtype is None or col.dtype == preferred_dtype:
+                    matches_with_pos.append((m.start(), col))
+                    seen.add(col.name)
+
+        # 2. Domain Synonyms
+        for canonical, syn_list in cls.COLUMN_SYNONYMS.items():
+            for syn in syn_list:
+                m = re.search(r'\b' + re.escape(syn.lower()) + r'\b', text_lower)
+                if m:
+                    for col in available_columns:
+                        if col.name in seen:
+                            continue
+                        c_lower = col.name.lower()
+                        if canonical == c_lower or canonical in c_lower or any(s in c_lower for s in syn_list if len(s) > 3):
+                            if preferred_dtype is None or col.dtype == preferred_dtype:
+                                matches_with_pos.append((m.start(), col))
+                                seen.add(col.name)
+                                break
+
+        matches_with_pos.sort(key=lambda x: x[0])
+        return [col for _, col in matches_with_pos]
+
+    @classmethod
     def get_date_column(cls, available_columns: List[ColumnMeta]) -> Optional[ColumnMeta]:
         """Find the primary datetime column in the dataset."""
         date_cols = [c for c in available_columns if c.dtype == "datetime"]
@@ -132,3 +170,4 @@ class ValidationService:
         return True, None
 
 validation_service = ValidationService()
+

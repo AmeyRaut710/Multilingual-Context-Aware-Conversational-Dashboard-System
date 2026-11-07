@@ -99,6 +99,8 @@ class AmbiguityService:
             merged_entities["target_chart_id"] = target_id or session.charts[0].id
         elif pending.parameter_needed == "metric_col":
             merged_entities["metric_col"] = answer_clean
+        elif pending.parameter_needed == "category_col":
+            merged_entities["columns"] = [answer_clean]
 
         original_intent = pending.original_intent
         # Clear pending clarification
@@ -106,3 +108,4 @@ class AmbiguityService:
         return original_intent, merged_entities
 
 ambiguity_service = AmbiguityService()
+

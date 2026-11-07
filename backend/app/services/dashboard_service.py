@@ -15,18 +15,79 @@ class DashboardService:
     @classmethod
     def recompute_all(cls, session: SessionData):
         """
-        Recomputes all charts and KPIs using the currently filtered DataFrame.
+        Recomputes all charts, KPIs, and cascading slicer options using the currently filtered DataFrame.
         """
+        if session.df_working is None:
+            return
+
+        # 1. Update cascading/dependent filter options dynamically
+        filter_col_indices = {f.column: idx for idx, f in enumerate(session.filters)}
+
+        for flt in session.filters:
+            col = flt.column
+            if col not in session.df_working.columns:
+                continue
+
+            current_idx = filter_col_indices.get(col, 0)
+            col_cardinality = session.df_working[col].nunique()
+
+            # Build slice filtered by upstream/parent active filters
+            temp_df = session.df_working.copy()
+            for other_col, other_val in session.active_filters.items():
+                if other_col == col:
+                    continue
+                if other_val is None or other_val == "" or other_val == [] or other_val == "All" or other_val == "all":
+                    continue
+                if other_col not in temp_df.columns:
+                    continue
+
+                # Upstream check: parent filters (earlier in list or lower cardinality) constrain child slicers
+                other_idx = filter_col_indices.get(other_col, float('inf'))
+                other_cardinality = session.df_working[other_col].nunique()
+
+                # If other_col is downstream (later in filter list and higher or equal cardinality), do not constrain parent options
+                if other_idx > current_idx and other_cardinality >= col_cardinality:
+                    continue
+
+                if isinstance(other_val, list):
+                    if len(other_val) > 0:
+                        temp_df = temp_df[temp_df[other_col].astype(str).isin([str(v) for v in other_val])]
+                elif isinstance(other_val, (list, tuple)) and len(other_val) == 2:
+                    temp_df = temp_df[(temp_df[other_col] >= other_val[0]) & (temp_df[other_col] <= other_val[1])]
+                else:
+                    temp_df = temp_df[temp_df[other_col].astype(str) == str(other_val)]
+
+            distinct_vals = temp_df[col].dropna().unique()
+            try:
+                sorted_vals = sorted(distinct_vals, key=lambda x: str(x).lower())
+            except Exception:
+                sorted_vals = list(distinct_vals)
+
+            flt.options = [str(x) for x in sorted_vals if str(x).strip() != "" and str(x).lower() != "nan"]
+
+            # If current selection values are not in available options, sanitize child selection
+            if isinstance(flt.current_value, list):
+                valid_items = [v for v in flt.current_value if v in flt.options]
+                if len(valid_items) != len(flt.current_value):
+                    flt.current_value = valid_items
+                    session.active_filters[col] = valid_items
+            elif isinstance(flt.current_value, str) and flt.current_value and flt.current_value not in ["All", "all"]:
+                if flt.current_value not in flt.options:
+                    flt.current_value = None
+                    if col in session.active_filters:
+                        del session.active_filters[col]
+
+        # 2. Get filtered dataframe with all active filters applied
         filtered_df = session.get_filtered_df()
 
-        # Recompute KPIs
+        # 3. Recompute KPIs
         for kpi in session.kpis:
             res = visualization_service.compute_kpi_value(filtered_df, kpi.metric_col, kpi.agg)
             kpi.value = res["value"]
             kpi.formatted_value = res["formatted_value"]
             kpi.prefix = res["prefix"]
 
-        # Recompute Charts
+        # 4. Recompute Charts
         for chart in session.charts:
             chart.plotly_spec = visualization_service.generate_chart_spec(
                 df=filtered_df,
@@ -176,27 +237,37 @@ class DashboardService:
         if session.df_working is None or column not in session.df_working.columns:
             return False, f"Column '{column}' does not exist for filtering."
 
-        session.active_filters[column] = value
-        
-        # Ensure FilterItem exists in session.filters
-        existing_item = next((f for f in session.filters if f.column == column), None)
-        col_series = session.df_working[column]
-        
-        if not existing_item:
-            filter_type = "dropdown"
-            options = [str(x) for x in col_series.dropna().unique()[:30]]
-            session.filters.append(FilterItem(
-                id=f"flt_{uuid.uuid4().hex[:6]}",
-                column=column,
-                filter_type=filter_type,
-                options=options,
-                current_value=value
-            ))
+        if value is None or value == "" or value == [] or value == "All" or value == "all":
+            if column in session.active_filters:
+                del session.active_filters[column]
+            for f in session.filters:
+                if f.column == column:
+                    f.current_value = [] if isinstance(f.current_value, list) else None
         else:
-            existing_item.current_value = value
+            session.active_filters[column] = value
+            existing_item = next((f for f in session.filters if f.column == column), None)
+            if not existing_item:
+                session.filters.append(FilterItem(
+                    id=f"flt_{uuid.uuid4().hex[:6]}",
+                    column=column,
+                    filter_type="dropdown",
+                    options=[],
+                    current_value=value
+                ))
+            else:
+                existing_item.current_value = value
 
         cls.recompute_all(session)
-        return True, f"Applied filter on '{column}': {value}."
+        val_display = ", ".join(value) if isinstance(value, list) else str(value)
+        return True, f"Applied filter on '{column}': {val_display or 'All'}."
+
+    @classmethod
+    def remove_slicer(cls, session: SessionData, column: str) -> Tuple[bool, str]:
+        if column in session.active_filters:
+            del session.active_filters[column]
+        session.filters = [f for f in session.filters if f.column != column]
+        cls.recompute_all(session)
+        return True, f"Removed slicer for '{column}'."
 
     @classmethod
     def clear_filter(cls, session: SessionData, column: Optional[str] = None) -> Tuple[bool, str]:
@@ -205,12 +276,12 @@ class DashboardService:
                 del session.active_filters[column]
             for f in session.filters:
                 if f.column == column:
-                    f.current_value = None
+                    f.current_value = [] if isinstance(f.current_value, list) else None
             msg = f"Cleared filter on '{column}'."
         else:
             session.active_filters = {}
             for f in session.filters:
-                f.current_value = None
+                f.current_value = [] if isinstance(f.current_value, list) else None
             msg = "Cleared all dashboard filters."
 
         cls.recompute_all(session)
@@ -308,6 +379,37 @@ class DashboardService:
             success, msg, kpi_obj = cls.create_kpi(session, metric_col, agg)
             if success and kpi_obj:
                 affected_id = kpi_obj.id
+
+        elif intent in ["ADD_SLICER", "CREATE_SLICER"]:
+            cols = entities.get("columns", [])
+            if not cols and entities.get("column"):
+                cols = [entities.get("column")]
+
+            if not cols:
+                success = False
+                msg = "Please specify which column you would like to create a slicer for."
+            else:
+                created_names = []
+                for col_name in cols:
+                    if session.df_working is not None and col_name in session.df_working.columns:
+                        existing = next((f for f in session.filters if f.column == col_name), None)
+                        if not existing:
+                            session.filters.append(FilterItem(
+                                id=f"flt_{uuid.uuid4().hex[:6]}",
+                                column=col_name,
+                                filter_type="dropdown",
+                                options=[],
+                                current_value=[]
+                            ))
+                        created_names.append(col_name)
+
+                if created_names:
+                    cls.recompute_all(session)
+                    success = True
+                    msg = f"Added interactive slicer{'s' if len(created_names) > 1 else ''} for {', '.join(created_names)}."
+                else:
+                    success = False
+                    msg = f"Columns {', '.join(cols)} were not found in the active dataset."
 
         elif intent == "APPLY_FILTER":
             col = entities.get("column")

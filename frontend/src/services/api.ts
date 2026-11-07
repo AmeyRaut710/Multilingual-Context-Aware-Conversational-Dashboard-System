@@ -1,4 +1,4 @@
-import { DashboardState, CommandResponse, DatasetMeta } from '../types/dashboard';
+import { DashboardState, CommandResponse, DatasetMeta, DataTableParams, DataTableResponse } from '../types/dashboard';
 
 const API_BASE = '/api';
 
@@ -87,6 +87,16 @@ export const api = {
     return res.json();
   },
 
+  async removeSlicer(sessionId: string, column: string): Promise<{ state: DashboardState }> {
+    const res = await fetch(`${API_BASE}/dashboard/filter/remove`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ session_id: sessionId, column }),
+    });
+    if (!res.ok) throw new Error(await res.text());
+    return res.json();
+  },
+
   async deleteChart(sessionId: string, chartId: string): Promise<{ state: DashboardState }> {
     const res = await fetch(`${API_BASE}/dashboard/chart/delete`, {
       method: 'POST',
@@ -117,6 +127,16 @@ export const api = {
     return res.json();
   },
 
+  async fetchCompleteDataTable(params: DataTableParams): Promise<DataTableResponse> {
+    const res = await fetch(`${API_BASE}/dataset/table`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(params),
+    });
+    if (!res.ok) throw new Error(await res.text());
+    return res.json();
+  },
+
   async clearWorkspace(sessionId: string): Promise<void> {
     await fetch(`${API_BASE}/session/clear?session_id=${encodeURIComponent(sessionId)}`, {
       method: 'DELETE',
@@ -135,3 +155,4 @@ export const api = {
     return `${API_BASE}/project/export/pdf?session_id=${encodeURIComponent(sessionId)}`;
   }
 };
+

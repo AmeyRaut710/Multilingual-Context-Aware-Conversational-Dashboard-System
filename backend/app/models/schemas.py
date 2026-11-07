@@ -109,6 +109,31 @@ class ClearFilterRequest(BaseModel):
     session_id: str
     column: Optional[str] = None  # None clears all filters
 
+class DataTableRequest(BaseModel):
+    session_id: str
+    page: int = 1
+    page_size: int = 100  # 25, 50, 100, 250
+    search: Optional[str] = None
+    sort_by: Optional[str] = None
+    sort_order: Optional[str] = "asc"  # asc, desc
+    column_filters: Optional[Dict[str, str]] = None
+    use_dashboard_filters: bool = True
+
+class DataTableResponse(BaseModel):
+    success: bool
+    total_rows: int
+    total_columns: int
+    filtered_rows: int
+    total_pages: int
+    current_page: int
+    page_size: int
+    start_row: int
+    end_row: int
+    columns: List[str]
+    columns_meta: List[ColumnMeta] = []
+    rows: List[Dict[str, Any]]
+
+
 class ChartUpdateRequest(BaseModel):
     session_id: str
     chart_id: str
@@ -125,3 +150,4 @@ class ChartDeleteRequest(BaseModel):
 class KPIDeleteRequest(BaseModel):
     session_id: str
     kpi_id: str
+

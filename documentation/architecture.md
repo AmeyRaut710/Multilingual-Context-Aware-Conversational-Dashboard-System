@@ -116,3 +116,4 @@ The system follows a modern decoupled architecture consisting of an asynchronous
    - Operates completely offline without internet or server connectivity.
 3. **PDF Export**:
    - Generates a formatted PDF report with ReportLab featuring summary tables, KPIs, and visualization metadata.
+

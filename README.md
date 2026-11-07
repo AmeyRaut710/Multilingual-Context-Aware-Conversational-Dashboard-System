@@ -43,7 +43,14 @@ A state-of-the-art Business Intelligence (BI) and data analytics system that ena
    - **Standalone Interactive HTML**: 100% self-contained single-file HTML embedding Plotly.js and client-side filter logic. Works completely offline without an internet connection or backend server.
    - **Executive PDF Report**: Static report generated via ReportLab with summary tables and chart inventories.
 
-8. **Privacy-First Temporary Architecture**:
+8. **View Complete Dataset Table**:
+   - Dedicated full-screen interactive data table with backend pagination (selectable page sizes: 25, 50, 100, 250).
+   - Global search across all columns on the complete dataset.
+   - Column header sorting (ascending / descending) on the entire dataset.
+   - Individual column-level filters and clear null/missing value displays.
+   - Accesses all rows without truncating or sending unnecessary data to the client.
+
+9. **Privacy-First Temporary Architecture**:
    - **Zero permanent database dependencies** (No MongoDB, PostgreSQL, or SQLite).
    - In-memory session management with automatic 60-minute TTL cleanup and a 1-click **Clear Workspace** button.
 
@@ -225,6 +232,7 @@ python -m unittest discover -s backend/app/tests -v
 17. `test_21_22_standalone_html_export`: Verifies offline interactive HTML export with client-side filters.
 18. `test_23_pdf_export`: Validates ReportLab PDF document generation.
 19. `test_24_clear_workspace`: Verifies temporary in-memory session data destruction.
+20. `test_25_view_complete_dataset_table_acceptance`: Verifies complete dataset table with 5,332 rows, 12 columns, page sizes (25, 50, 100, 250), final page accessibility (page 54), global search, and sorting across the full dataset.
 
 ---
 
@@ -261,3 +269,4 @@ Click **Export** in the top navigation bar to select:
 
 ## 📄 License
 This project is developed for educational and research purposes as a B.Tech Computer Science Engineering Major Project. MIT License.
+

@@ -72,3 +72,4 @@ class SpeechService:
             return False, "", {"error": str(e), "message": f"Transcription failed: {str(e)}"}
 
 speech_service = SpeechService()
+

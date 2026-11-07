@@ -104,3 +104,4 @@ class ContextService:
             session.last_modified_chart_id = affected_id
 
 context_service = ContextService()
+

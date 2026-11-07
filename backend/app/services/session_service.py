@@ -113,3 +113,4 @@ class SessionManager:
             del self._sessions[sid]
 
 session_manager = SessionManager()
+

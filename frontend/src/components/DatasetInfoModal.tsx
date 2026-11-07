@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { DatasetMeta } from '../types/dashboard';
-import { X, Database, FileSpreadsheet, AlertTriangle, Layers, Hash, Calendar, Tag } from 'lucide-react';
+import { X, Database, FileSpreadsheet, AlertTriangle, Layers, Hash, Calendar, Tag, Table as TableIcon } from 'lucide-react';
 
 interface DatasetInfoModalProps {
   isOpen: boolean;
   onClose: () => void;
   metadata?: DatasetMeta;
   onSwitchSheet: (sheetName: string) => void;
+  onOpenCompleteTable?: () => void;
 }
 
 export const DatasetInfoModal: React.FC<DatasetInfoModalProps> = ({
@@ -14,6 +15,7 @@ export const DatasetInfoModal: React.FC<DatasetInfoModalProps> = ({
   onClose,
   metadata,
   onSwitchSheet,
+  onOpenCompleteTable,
 }) => {
   const [activeTab, setActiveTab] = useState<'preview' | 'schema' | 'stats'>('preview');
 
@@ -167,7 +169,21 @@ export const DatasetInfoModal: React.FC<DatasetInfoModalProps> = ({
         </div>
 
         {/* Footer */}
-        <div className="p-4 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-200 dark:border-slate-800 flex justify-end">
+        <div className="p-4 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
+          <div>
+            {onOpenCompleteTable && (
+              <button
+                onClick={() => {
+                  onClose();
+                  onOpenCompleteTable();
+                }}
+                className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold shadow-md shadow-brand-600/30 transition-all"
+              >
+                <TableIcon className="w-4 h-4" />
+                <span>View Complete Dataset Table ({metadata.total_rows.toLocaleString()} Rows)</span>
+              </button>
+            )}
+          </div>
           <button
             onClick={onClose}
             className="px-4 py-2 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-xs font-semibold hover:opacity-90 transition-opacity"
@@ -180,3 +196,4 @@ export const DatasetInfoModal: React.FC<DatasetInfoModalProps> = ({
     </div>
   );
 };
+

@@ -54,9 +54,44 @@ class IntentService:
             }
 
         # 3. Intent Classification Rules
-        # Filter removals
-        if any(w in text_lower for w in ["clear filter", "reset filter", "remove filter", "filter hatao", "filter kadha"]):
+        # Filter / Slicer removals
+        if any(w in text_lower for w in [
+            "clear filter", "reset filter", "remove filter", "clear all filters", 
+            "remove all filters", "clear slicer", "remove slicer", "filter hatao", 
+            "filter kadha", "slicer hatao", "slicer kadha"
+        ]):
             return {"intent": "REMOVE_FILTER", "language": lang, "entities": {}}
+
+        # Slicer Creation Intent (e.g. "Add the slicer of Region and State", "Create Region slicer")
+        has_slicer_word = any(w in text_lower for w in [
+            "slicer", "slicers", "स्लाइसर", "स्लाइज़र", "स्लायसर", 
+            "filter control", "filter bar", "add filter for", "add filter of"
+        ])
+        if has_slicer_word:
+            all_slicer_cols = validation_service.find_all_matching_columns(text, available_cols)
+            if all_slicer_cols:
+                return {
+                    "intent": "ADD_SLICER",
+                    "language": lang,
+                    "entities": {"columns": [c.name for c in all_slicer_cols]}
+                }
+            else:
+                # If user says "add a slicer" with no column mentioned
+                cat_cols = validation_service.get_categorical_columns(available_cols)
+                cat_names = [c.name for c in cat_cols[:5]]
+                clarification = ClarificationQuestion(
+                    question=f"Which column would you like to create a slicer for ({', '.join(cat_names)})?",
+                    parameter_needed="category_col",
+                    options=cat_names,
+                    original_intent="ADD_SLICER",
+                    partial_entities={"raw_command": text}
+                )
+                session.pending_clarification = clarification
+                return {
+                    "intent": "AMBIGUOUS",
+                    "language": lang,
+                    "clarification": clarification
+                }
 
         # Export Intent
         if any(w in text_lower for w in ["export", "download", "save project", "zip", "pdf", "html export", "डैशबोर्ड निर्यात"]):
@@ -185,3 +220,4 @@ class IntentService:
         }
 
 intent_service = IntentService()
+

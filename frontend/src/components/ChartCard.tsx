@@ -171,3 +171,4 @@ export const ChartCard: React.FC<ChartCardProps> = ({
     </div>
   );
 };
+

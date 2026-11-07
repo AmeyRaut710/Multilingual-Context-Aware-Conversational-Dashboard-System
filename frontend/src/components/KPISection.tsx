@@ -92,3 +92,4 @@ export const KPISection: React.FC<KPISectionProps> = ({
     </div>
   );
 };
+

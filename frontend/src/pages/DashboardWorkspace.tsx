@@ -7,6 +7,7 @@ import { ChartGrid } from '../components/ChartGrid';
 import { ChatAssistant } from '../components/ChatAssistant';
 import { DatasetInfoModal } from '../components/DatasetInfoModal';
 import { ExportModal } from '../components/ExportModal';
+import { CompleteDataTableModal } from '../components/CompleteDataTableModal';
 import { api } from '../services/api';
 import { Sparkles, CheckCircle2, AlertCircle } from 'lucide-react';
 
@@ -26,6 +27,7 @@ export const DashboardWorkspace: React.FC<DashboardWorkspaceProps> = ({
   const [state, setState] = useState<DashboardState>(initialState);
   const [isLoadingCommand, setIsLoadingCommand] = useState(false);
   const [isDatasetInfoOpen, setIsDatasetInfoOpen] = useState(false);
+  const [isCompleteTableOpen, setIsCompleteTableOpen] = useState(false);
   const [isExportOpen, setIsExportOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState<{ text: string; type: 'success' | 'error' | 'info' } | null>(null);
 
@@ -85,6 +87,16 @@ export const DashboardWorkspace: React.FC<DashboardWorkspaceProps> = ({
       showToast('Filters reset', 'info');
     } catch (err: any) {
       showToast(err.message || 'Failed to reset filters', 'error');
+    }
+  };
+
+  const handleRemoveSlicer = async (column: string) => {
+    try {
+      const res = await api.removeSlicer(state.session_id, column);
+      setState(res.state);
+      showToast(`Removed ${column} slicer`, 'info');
+    } catch (err: any) {
+      showToast(err.message || 'Failed to remove slicer', 'error');
     }
   };
 
@@ -175,6 +187,7 @@ export const DashboardWorkspace: React.FC<DashboardWorkspaceProps> = ({
         darkMode={darkMode}
         onToggleTheme={onToggleTheme}
         onOpenDatasetInfo={() => setIsDatasetInfoOpen(true)}
+        onOpenCompleteTable={() => setIsCompleteTableOpen(true)}
         onOpenExport={() => setIsExportOpen(true)}
         onClearWorkspace={handleClearWorkspace}
         onSwitchSheet={handleSwitchSheet}
@@ -217,6 +230,7 @@ export const DashboardWorkspace: React.FC<DashboardWorkspaceProps> = ({
           availableColumns={state.dataset_meta?.columns || []}
           onApplyFilter={handleApplyFilter}
           onClearFilter={handleClearFilter}
+          onRemoveSlicer={handleRemoveSlicer}
         />
 
         {/* Dynamic KPI Cards Section */}
@@ -255,6 +269,16 @@ export const DashboardWorkspace: React.FC<DashboardWorkspaceProps> = ({
         onClose={() => setIsDatasetInfoOpen(false)}
         metadata={state.dataset_meta}
         onSwitchSheet={handleSwitchSheet}
+        onOpenCompleteTable={() => setIsCompleteTableOpen(true)}
+      />
+
+      {/* Complete Dataset Full-Screen Table Modal */}
+      <CompleteDataTableModal
+        isOpen={isCompleteTableOpen}
+        onClose={() => setIsCompleteTableOpen(false)}
+        sessionId={state.session_id}
+        filename={state.dataset_meta?.filename}
+        activeSheet={state.dataset_meta?.active_sheet}
       />
 
       {/* Export Options Modal */}
@@ -267,3 +291,4 @@ export const DashboardWorkspace: React.FC<DashboardWorkspaceProps> = ({
     </div>
   );
 };
+

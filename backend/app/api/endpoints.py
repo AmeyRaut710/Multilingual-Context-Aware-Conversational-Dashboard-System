@@ -5,7 +5,8 @@ import json
 from app.models.schemas import (
     DashboardState, CommandRequest, CommandResponse, NewProjectRequest,
     SelectSheetRequest, FilterUpdateRequest, ClearFilterRequest,
-    ChartUpdateRequest, ChartDeleteRequest, KPIDeleteRequest
+    ChartUpdateRequest, ChartDeleteRequest, KPIDeleteRequest,
+    DataTableRequest, DataTableResponse
 )
 from app.services.session_service import session_manager
 from app.services.dataset_service import dataset_service
@@ -112,6 +113,61 @@ def get_columns(session_id: str = Query(...)):
     if not session or not session.dataset_meta:
         raise HTTPException(status_code=404, detail="No dataset uploaded.")
     return {"columns": session.dataset_meta.columns}
+
+@router.post("/dataset/table", response_model=DataTableResponse)
+def get_dataset_table(req: DataTableRequest):
+    session = session_manager.get_session(req.session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found.")
+    try:
+        return dataset_service.get_paginated_table(
+            session=session,
+            page=req.page,
+            page_size=req.page_size,
+            search=req.search,
+            sort_by=req.sort_by,
+            sort_order=req.sort_order,
+            column_filters=req.column_filters,
+            use_dashboard_filters=req.use_dashboard_filters
+        )
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@router.get("/dataset/table", response_model=DataTableResponse)
+def get_dataset_table_query(
+    session_id: str = Query(...),
+    page: int = Query(1),
+    page_size: int = Query(100),
+    search: Optional[str] = Query(None),
+    sort_by: Optional[str] = Query(None),
+    sort_order: Optional[str] = Query("asc"),
+    column_filters: Optional[str] = Query(None),  # JSON string
+    use_dashboard_filters: bool = Query(True)
+):
+    session = session_manager.get_session(session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found.")
+    
+    parsed_filters = None
+    if column_filters:
+        try:
+            parsed_filters = json.loads(column_filters)
+        except Exception:
+            pass
+
+    try:
+        return dataset_service.get_paginated_table(
+            session=session,
+            page=page,
+            page_size=page_size,
+            search=search,
+            sort_by=sort_by,
+            sort_order=sort_order,
+            column_filters=parsed_filters,
+            use_dashboard_filters=use_dashboard_filters
+        )
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 @router.post("/command/process", response_model=CommandResponse)
 def process_command(req: CommandRequest):
@@ -223,6 +279,18 @@ def clear_filter(req: ClearFilterRequest):
     success, msg = dashboard_service.clear_filter(session, req.column)
     return {"success": True, "message": msg, "state": session.to_dashboard_state()}
 
+@router.post("/dashboard/filter/remove")
+def remove_slicer(req: ClearFilterRequest):
+    session = session_manager.get_session(req.session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found.")
+
+    if req.column:
+        success, msg = dashboard_service.remove_slicer(session, req.column)
+    else:
+        success, msg = dashboard_service.clear_filter(session)
+    return {"success": True, "message": msg, "state": session.to_dashboard_state()}
+
 @router.get("/dashboard/state")
 def get_state(session_id: str = Query(...)):
     session = session_manager.get_session(session_id)
@@ -276,3 +344,4 @@ def export_pdf(session_id: str = Query(...)):
 def clear_workspace(session_id: str = Query(...)):
     success = session_manager.clear_session(session_id)
     return {"success": success, "message": "Session and temporary workspace cleared."}
+

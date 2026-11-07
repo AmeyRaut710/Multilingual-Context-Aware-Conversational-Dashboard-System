@@ -298,3 +298,4 @@ export const ChatAssistant: React.FC<ChatAssistantProps> = ({
     </div>
   );
 };
+

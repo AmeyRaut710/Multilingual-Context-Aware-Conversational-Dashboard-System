@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
   Sun, Moon, Download, Trash2, Database, Layers, 
-  Sparkles, CheckCircle2 
+  Sparkles, CheckCircle2, Table as TableIcon 
 } from 'lucide-react';
 import { DashboardState } from '../types/dashboard';
 
@@ -10,6 +10,7 @@ interface NavbarProps {
   darkMode: boolean;
   onToggleTheme: () => void;
   onOpenDatasetInfo: () => void;
+  onOpenCompleteTable: () => void;
   onOpenExport: () => void;
   onClearWorkspace: () => void;
   onSwitchSheet: (sheetName: string) => void;
@@ -20,6 +21,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   darkMode,
   onToggleTheme,
   onOpenDatasetInfo,
+  onOpenCompleteTable,
   onOpenExport,
   onClearWorkspace,
   onSwitchSheet,
@@ -50,18 +52,28 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </div>
 
-        {/* Middle: Dataset Info & Sheet Selector */}
+        {/* Middle: Dataset Info, View Complete Data & Sheet Selector */}
         {meta && (
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-2.5">
             <button
               onClick={onOpenDatasetInfo}
               className="flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300 transition-colors border border-slate-200 dark:border-slate-700"
-              title="Click to view dataset preview & stats"
+              title="Click to view dataset metadata & schema stats"
             >
               <Database className="w-3.5 h-3.5 text-brand-600 dark:text-brand-400" />
               <span>{meta.filename}</span>
               <span className="text-slate-400 dark:text-slate-500">|</span>
               <span className="font-semibold">{meta.total_rows.toLocaleString()} rows</span>
+            </button>
+
+            {/* Clearly Visible View Complete Data Button */}
+            <button
+              onClick={onOpenCompleteTable}
+              className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-indigo-50 dark:bg-indigo-950/70 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 text-brand-700 dark:text-brand-300 font-bold text-xs border border-brand-200 dark:border-brand-800 transition-colors shadow-sm"
+              title="View all rows and all columns in full-screen table view with search, pagination & sorting"
+            >
+              <TableIcon className="w-3.5 h-3.5 text-brand-600 dark:text-brand-400" />
+              <span>View Complete Data</span>
             </button>
 
             {meta.sheet_names && meta.sheet_names.length > 1 && (
@@ -119,3 +131,4 @@ export const Navbar: React.FC<NavbarProps> = ({
     </header>
   );
 };
+

@@ -98,3 +98,29 @@ export interface CommandResponse {
   updated_state?: DashboardState;
   error_details?: string;
 }
+
+export interface DataTableParams {
+  session_id: string;
+  page?: number;
+  page_size?: number; // 25, 50, 100, 250
+  search?: string;
+  sort_by?: string;
+  sort_order?: 'asc' | 'desc';
+  column_filters?: Record<string, string>;
+}
+
+export interface DataTableResponse {
+  success: boolean;
+  total_rows: number;
+  total_columns: number;
+  filtered_rows: number;
+  total_pages: number;
+  current_page: number;
+  page_size: number;
+  start_row: number;
+  end_row: number;
+  columns: string[];
+  columns_meta: ColumnMeta[];
+  rows: Record<string, any>[];
+}
+

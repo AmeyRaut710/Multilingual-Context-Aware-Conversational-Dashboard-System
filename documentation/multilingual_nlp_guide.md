@@ -69,3 +69,4 @@ When a command lacks essential parameters:
 - **Unclear Target Chart**:
   - User: `Change that chart` (with multiple charts present and none currently selected)
   - System: `Which chart would you like to modify?` (displays list of existing chart titles)
+

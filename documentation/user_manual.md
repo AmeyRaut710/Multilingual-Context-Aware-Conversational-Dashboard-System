@@ -65,6 +65,13 @@ Clicking any button immediately resolves the ambiguity and creates your visualiz
 
 ## 4. Dashboard Controls & Customization
 
+- **View Complete Data**: Click the **View Complete Data** button in the top navigation bar or inside the Dataset Information modal to open a full-screen, high-performance table view:
+  - Displays all rows and columns using backend pagination with selectable page sizes: **25, 50, 100, and 250** rows per page.
+  - Search across all columns simultaneously using the global search input.
+  - Sort by any column by clicking its header (toggles ascending/descending) — sorting is executed across the complete dataset in the backend, not merely the visible page.
+  - Apply individual column filters in the filter row.
+  - Clear `null` value badges and horizontal/vertical scrolling for wide and long datasets.
+  - Click **Close** or press **Esc** to return to your dashboard without losing any dashboard state.
 - **Selecting a Chart**: Click on any chart card. A glowing indigo border will indicate that this chart is now the active focus for subsequent pronoun commands (e.g. `Change it to a donut chart`).
 - **Changing Chart Types**: Use the dropdown selector in the top-right toolbar of any chart card.
 - **Expanding Width**: Click the maximize/minimize icon on any chart card to toggle between 1-column and full-width 2-column views.
@@ -88,3 +95,4 @@ Click the **Export** button in the top navbar to open the Export modal:
 
 - The system stores no data in any permanent database.
 - Click the **Clear** button in the top navbar to purge all session data and temporary working data from server memory.
+
